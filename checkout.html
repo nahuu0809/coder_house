@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito- LemmonDrinks</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="chk-left-nav">
+                <a class="navbar-brand" href="index.html">LemmonDrinks</a>
+            </div>
+            <div class="chk-ul-right-nav">
+                <a href="checkout.html"> <img src="img/cartWhite.png" alt="Cart"> </a>
+            </div>
+        </nav>
+    </header>
+    <ol class="breadcrumb">
+        <li><a href="#">Revisar</a></li>
+        <li class="active"><a href="#">Ordenar</a></li>
+        <li><a href="#">Pagar</a></li>
+    </ol>
+    <div class="row row-chk">
+        <div class="col-75">
+            <div class="col-75__container">
+                <form class="col-75__container-form">
+                    <div class="row row-nwrp">
+                        <div class="col-50">
+                            <h3>Facturacion</h3>
+                            <label for="fname"><i class="fa fa-user"></i>Nombre y Apellido</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Homero J. Simpson"
+                                maxlength="60" required>
+                            <label for="dni"><i class="fa fa-user"></i>D.N.I/CUIL</label>
+                            <input type="text" id="fname" name="firstname" placeholder="C4043243" maxlength="40"
+                                required>
+                            <label for="email"><i class="fa fa-envelope"></i> E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="homer@springfield.com"
+                                maxlength="100" required>
+                            <label for="adr"><i class="fa fa-address-card-o"></i>Domicilio</label>
+                            <input type="text" id="adr" name="address" placeholder="Av. SiempreViva 742" maxlength="50"
+                                required>
+                            <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+                            <select id="" class="select-ciudad" required>
+                                <option value="blank" selected></option>
+                                <option value="Castelar"> Castelar </option>
+                                <option value="Ituzaingo"> Ituzaingo </option>
+                                <option value="La Reja"> La Reja </option>
+                                <option value="Merlo"> Merlo </option>
+                                <option value="Moreno"> Moreno </option>
+                                <option value="Moron"> Moron </option>
+                                <option value="San Antonio de Padua"> San Antonio de Padua </option>
+                            </select>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">Provincia</label>
+                                    <select class="select-provincia" required>
+                                        <option value="blank" selected></option>
+                                        <option value="Buenos Aires"> Buenos Aires </option>
+                                        <option value="Ciudad Autónoma de Buenos Aires"> Ciudad Autónoma de Buenos Aires
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="zip">Codigo Postal</label>
+                                        <input type="text" id="zip" name="zip" placeholder="10001" maxlength="40"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> La direccion de envio es la misma para
+                        la facturacion. </input>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sameadr"> Proceder a pagar con criptomonedas. </input>
+                    </label>
+                </form>
+                <a class="btn-fin-pay" href="pay.html">Finalizar la compra</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <div class="container">
+                    <h4>Carrito
+                        <span class="price" style="color:black">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>4</b>
+                        </span>
+                    </h4>
+                    <p><a href="#">Producto 1</a> <span class="price">$15</span></p>
+                    <p><a href="#">Producto 2</a> <span class="price">$5</span></p>
+                    <p><a href="#">Producto 3</a> <span class="price">$8</span></p>
+                    <p><a href="#">Producto 4</a> <span class="price">$2</span></p>
+                    <hr>
+                    <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__redes">
+            <a href="#"><i class="bi bi-facebook boot-icon"></i></a>
+            <a href="#"><i class="bi bi-twitter boot-icon"></i></a>
+            <a href="#"><i class="bi bi-telegram boot-icon"></i></a>
+        </div>
+        <div class="footer__payments">
+            <ul>
+                <li class="footer__payments_credit-card"> <img src="img/pay/visa.png" alt="Visa" title="Visa"> </li>
+                <li class="footer__payments_credit-card"> <img src="img/pay/amex.png" alt="AMEX"
+                        title="American Express"> </li>
+                <li class="footer__payments_credit-card"> <img src="img/pay/master.png" alt="MasterCard"
+                        title="MasterCard"> </li>
+                <li class="footer__payments_credit-card"> <img src="img/pay/eth.png" alt="Ethereum" title="Ethereum">
+                </li>
+                <li class="footer__payments_credit-card"> <img src="img/pay/ltc.png" alt="Litecoin" title="Litecoin">
+                </li>
+                <li class="footer__payments_credit-card"> <img src="img/pay/apay.png" alt="Apple Pay" title="Apple Pay">
+                </li>
+                <li class="footer__payments_credit-card"> <img src="img/pay/gpay.png" alt="Google Pay" title="G Pay">
+                </li>
+                <li class="footer__payments_credit-card"> <img src="img/pay/bitpay.png" alt="BitPay" title="BitPay">
+                </li>
+            </ul>
+        </div>
+        <div class="footer__datos">
+            <p class="footer__links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Acerca de Nosotros</a>
+                <a href="products.html">Productos</a>
+                <a href="contact.html">Contacto</a>
+                <a href="help.html">Ayuda</a>
+            </p>
+            <p>&copy; LemmonDrinks 2021</p>
+            <p>Diseñado por <a href="https://www.linkedin.com/in/nahueldiaz" class="enlaces_footer"><i
+                        class="bi bi-linkedin"></i> Nahuel Diaz</a></p>
+        </div>
+    </footer>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

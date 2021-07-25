@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Pago - LemmonDrinks</title>
+</head>
+
+<body>
+    <ol class="breadcrumb">
+        <li><a href="#">Review</a></li>
+        <li><a href="#">Order</a></li>
+        <li class="active"><a href="#">Payment</a></li>
+    </ol>
+    <section class="page_pay">
+        <div class="container">
+            <div class="row">
+                <h1>Finalizar la Compra</h1>
+            </div>
+            <div class='card-wrapper'></div>
+            <script src="js/card.js"></script>
+            <form class="form_pay">
+                <label>Numero de Tarjeta</label>
+                <input type="text" name="number">
+                <label>Nombre</label>
+                <input type="text" name="first-name" />
+                <label>Apellido</label>
+                <input type="text" name="last-name" />
+                <label>Mes/Ano de expiracion</label>
+                <input type="text" name="expiry" />
+                <label>CVV (Codigo de seguridad)</label>
+                <input type="text" name="cvc" />
+                <a href="" class="finish_pay">Finalizar Compra</a>
+            </form>
+        </div>
+    </section>
+    <script>
+        var card = new Card({
+            form: 'form',
+            container: '.card-wrapper',
+            formSelectors: {
+                nameInput: 'input[name="first-name"], input[name="last-name"]'
+            }
+        });
+    </script>
+</body>
+
+</html>

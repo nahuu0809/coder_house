@@ -1,0 +1,1470 @@
+@import "base/colors";
+@import "base/fonts";
+@import "base/mixins";
+
+/**************GENERAL**************/
+* {
+    text-decoration: none !important;
+    list-style-type: none !important;
+    font-family: $main-font, $second-font, $third-font !important;
+    padding: initial;
+}
+
+/**************NAV**************/
+
+.container-header {
+    @include width(100%);
+}
+
+.nav-logo:hover {
+    transform: scale(120%);
+}
+
+.pre-nav {
+    @include txtcenter;
+    @include backcolor ($DarkGold);
+    color: $white;
+    @include width(100%);
+    padding: 0.75% 0%;
+
+    h4 {
+        @include width(100%);
+        display: inline-block;
+        @include relative;
+    }
+}
+
+.top-nav {
+    @include backcolor ($DarkBlue);
+    @include width(100%);
+    @include flex;
+    @include fontsize (1.149rem);
+    padding: 1.5rem 0rem;
+
+    li:hover {
+        .sub-ul {
+            display: block;
+            color: $red;
+            @include backcolor ($DarkBlue);
+            @include bradius(5px);
+            padding: 0.6rem 0.8rem;
+        }
+    }
+
+    .top-ul {
+        @include width(100%);
+        @include flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 0%;
+
+        li {
+            @include relative;
+        }
+
+        .btn-nav {
+            @include brstyle(solid);
+            @include paddi(6px, 10px);
+            @include bradius(10px);
+            border-color: $Cian;
+
+            a {
+                color: $white;
+            }
+
+            &:hover {
+                @include backcolor ($VioletNeon);
+                transition: background-color 0.2s;
+            }
+        }
+
+        .sub-ul {
+            display: none;
+            position: absolute;
+            top: 30px;
+
+            a:hover {
+                @include backcolor ($VioletNeon);
+                color: $Cian;
+                @include bradius(3px);
+                font-weight: bold;
+                transition: background-color 0.2s;
+            }
+        }
+    }
+}
+
+.chk-ul-left-nav {
+    @include txtcenter;
+
+    a {
+        @include flex;
+        flex-direction: row;
+        @include paddi(12%, 10%);
+        color: $white;
+    }
+
+    img {
+        @include paddi(4%, 8%);
+    }
+}
+
+.chk-left-nav {
+    margin: 2rem 10rem;
+}
+
+.chk-ul-right-nav {
+    @include flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    color: $white;
+    padding-left: 55rem;
+    margin: 2rem 0rem;
+}
+
+.myCart {
+    @include flex;
+    flex-direction: row-reverse;
+    @include paddi(0%, 2%);
+}
+
+/**************BRANDS**************/
+.brands {
+    @include paddi(3%, 0%);
+
+    h1 {
+        text-decoration: underline;
+        color: #080B0D;
+        @include txtcenter;
+    }
+}
+
+.img-carr {
+    @include width(70%);
+}
+
+/**************DISCOUNTS**************/
+.discounts {
+    color: white;
+    font-weight: bolder;
+    @include backcolor ($black);
+    @include txtcenter;
+    @include paddi(4%, 0%);
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.discount__text {
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.media-video {
+    @include width(100%);
+}
+
+/******DRINKS****/
+.drinks{
+    background-color: black;
+color: white;
+}
+
+
+/***********3 PASOS*******************/
+.main-section-delivery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.contenedorMain .main-section-delivery .section-delivery-contenido {
+    background-color: black;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    padding: 10px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.contenedorMain .main-section-delivery .section-delivery-contenido .paso-1,
+.contenedorMain .main-section-delivery .section-delivery-contenido .paso-2,
+.contenedorMain .main-section-delivery .section-delivery-contenido .paso-3 {
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+}
+
+.contenedorMain .main-section-delivery .section-delivery-contenido .icono {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contenedorMain .main-section-delivery .section-delivery-contenido h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contenedorMain .main-section-delivery .section-delivery-contenido p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Mulish", sans-serif;
+}
+
+/****************************FOOTER****************************/
+.footer {
+    @include backcolor ($DarkBlue);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    @include width(100%);
+    text-align: left;
+    font: normal 16px sans-serif;
+    @include paddi(2%, 0%);
+
+    .footer__datos {
+        p {
+            color: $GreyFooterText;
+            @include fontsize (14px);
+            margin: 0;
+            @include txtcenter;
+        }
+    }
+
+    .footer__redes {
+        margin-top: 6px;
+        @include width(100%);
+        @include txtcenter;
+
+        a {
+            display: inline-block;
+            margin-left: 16px;
+            margin-bottom: 10px;
+
+            &:hover {
+                background-color: $Cian;
+                @include paddi(5px, 8px);
+                @include bradius(20%);
+            }
+        }
+    }
+
+    .footer__links {
+        a:before {
+            content: "·";
+            @include fontsize (20px);
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
+        }
+    }
+
+    p.footer__links {
+        @include fontsize (14px);
+        font-weight: bold;
+        color: #FFFFFF;
+        margin: 10px 0 10px 0;
+        @include paddi(0px, 0px);
+        transition: ease .25s;
+
+        a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+            transition: ease .25s;
+
+            &:hover {
+                color: $VioletNeon;
+            }
+        }
+    }
+}
+
+.enlaces_footer {
+    color: $Cian;
+
+    &:hover {
+        color: $VioletNeon;
+    }
+}
+
+.footer__payments_credit-card {
+    display: inline-block;
+    margin-left: 10px;
+
+    &:hover {
+        transform: scale(115%);
+    }
+}
+
+.footer__payments {
+    text-align: right;
+
+    ul {
+        @include flex;
+        justify-content: center;
+    }
+
+    /*h3{
+                    margin: 5px 120px;
+                }*/
+}
+
+/**************PAYMENT METHODS**************/
+/***HELP***/
+
+.sec-help {
+    list-style-type: none;
+    @include txtcenter;
+    @include paddi(1.3%, 0%);
+
+    h2 {
+        text-decoration: underline;
+    }
+}
+
+/**************ABOUT US**************/
+#abt-us {
+    @include backcolor (CurrentColor);
+
+    h2 {
+        @include fontsize (2rem);
+        @include paddi(1%, 0%);
+        @include txtcenter;
+        color: $white;
+    }
+
+    h3,
+    h4 {
+        @include fontsize (1.3rem);
+        @include txtcenter;
+        color: $white;
+    }
+}
+
+#abt-map {
+    @include paddi(1%, 0%);
+
+    .g_map {
+        @include brstyle(double);
+        @include bradius(40px);
+        @include paddi(1%, 1%);
+        @include width(90%);
+        margin-left: 5%;
+    }
+}
+
+/**************PRODUCTS**************/
+
+.ul__container-div {
+    @include brstyle(double);
+    margin: 4% 3%;
+    display: inline-block;
+    @include bradius(15px);
+    @include backcolor ($DarkCian);
+    border-color: $Cian;
+}
+
+.ul-vka,
+.ul-cer {
+    @include txtcenter;
+}
+
+.cant,
+.addToCart {
+    @include brstyle(solid);
+    @include backcolor (transparent);
+    @include txtcenter;
+    color: $white;
+    @include bradius(10px);
+    @include paddi(1%, 0%);
+    border-color: $Cian;
+}
+
+.cant {
+    margin: 0% 2%;
+    @include width(20%);
+
+    &:hover {
+        color: #000;
+        background-color: #00FFE7;
+        font-weight: 200;
+        transition: background-color 0.8s;
+        border-color: black;
+    }
+}
+
+ol,
+ul {
+    padding-left: 0rem;
+}
+
+.addToCart {
+    margin: 5% 20%;
+    @include width(65%);
+
+    &:hover {
+        color: #000;
+        background-color: #00FFE7;
+        font-weight: 200;
+        transition: background-color 0.8s;
+        border-color: black;
+    }
+}
+
+/*DRINKS SECTION*/
+
+.wines,
+.vodka,
+.beer,
+.champagne {
+    @include txtcenter;
+}
+
+.drinks img:hover {
+    transform: scale(105%);
+}
+
+.vodka-container img {
+    @include width(100%);
+}
+
+.vodka-cotainer,
+h2 {
+    @include txtcenter;
+}
+
+
+/*PUBLICITY SECTION*/
+.prd-publicity {
+    @include txtcenter;
+    @include fontsize (larger);
+    text-decoration: underline;
+    @include width(100%);
+}
+
+.prd-commercial {
+    @include width(100%);
+}
+
+/**************CONTACT FORM**************/
+.form-contact {
+    @include txtcenter;
+
+    h2 {
+        text-decoration: underline;
+    }
+
+    .form-contact-input {
+        @include paddi(1%, 2%);
+        border: 2px solid #ccc;
+        @include bradius(10px);
+        -webkit-appearance: none;
+        @include width(12%);
+        margin: 1% 4%;
+    }
+}
+
+
+/************HELP ****/
+
+.sec-help-g-map {
+    @include paddi(1%, 0%);
+    @include bradius(40px);
+    @include brstyle(solid);
+    @include width(30%);
+    margin: 1% 1%;
+}
+
+.credit-card {
+    h2 {
+        @include fontsize (2rem);
+        @include paddi(1%, 0%);
+        @include txtcenter;
+
+    }
+
+    h3 {
+        @include fontsize (1.3rem);
+        @include txtcenter;
+    }
+
+    h4 {
+        @include fontsize (1.3rem);
+        @include txtcenter;
+        @include paddi(1%, 0%);
+    }
+
+    .credit-card-logo-img {
+        @include width(10%);
+        @include paddi(2%, 2%);
+    }
+}
+
+.crypto-coins {
+    .crypto-coins-logo-img {
+        @include width(10%);
+        @include paddi(2%, 2%);
+    }
+}
+
+.debit-card {
+    .debit-card-logo-img {
+        @include width(10%);
+    }
+}
+
+.efecti {
+    h4 {
+        @include paddi(1%, 0%);
+    }
+
+    .efecti-logo-img {
+        @include width(10%);
+    }
+}
+
+.virtual-wallet-head {
+    @include paddi(1%, 0%);
+}
+
+.virtual-wallet-logo {
+    .virtual-wallet-logo-img {
+        @include width(10%);
+    }
+}
+
+/********************************************GRID**********************************************/
+.gridgaleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto1 foto2 foto2 foto2""foto3 foto3 foto3 foto4""foto5 foto6 foto6 foto6";
+}
+
+.itema {
+    grid-area: foto1;
+    background-image: url(../multimedia/foto1.jpg);
+    background-size: cover;
+
+    &:hover {
+        opacity: 60%;
+    }
+}
+
+.itemb {
+    grid-area: foto2;
+    background-image: url(../multimedia/foto2.jpg);
+    background-size: cover;
+
+    &:hover {
+        opacity: 60%;
+    }
+}
+
+.itemc {
+    grid-area: foto3;
+    background-image: url(../multimedia/foto3.jpg);
+    background-size: cover;
+
+    &:hover {
+        opacity: 60%;
+    }
+}
+
+.itemd {
+    grid-area: foto4;
+    background-image: url(../multimedia/foto4.jpg);
+    background-size: cover;
+
+    &:hover {
+        opacity: 60%;
+    }
+}
+
+.iteme {
+    grid-area: foto5;
+    background-image: url(../multimedia/foto5.jpg);
+    background-size: cover;
+
+    &:hover {
+        opacity: 60%;
+    }
+}
+
+.itemf {
+    grid-area: foto6;
+    background-image: url(../multimedia/foto6.jpg);
+    background-size: cover;
+
+    &:hover {
+        opacity: 60%;
+    }
+}
+
+.fotosgrid {
+    @include width(100%);
+    display: block;
+}
+
+/************************************************PRUEBAAAAA*************************************************************/
+
+.section_cervezas_card {
+    background-color: rgba(165, 42, 42, 0.281);
+}
+
+.section_cervezas_card-img {
+    padding-bottom: 10%;
+
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.227);
+    position: absolute;
+    @include width(100%);
+    z-index: 2;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.boot-icon {
+    @include fontsize (35px);
+    color: white;
+}
+
+/****************************CHECKOUT*******************/
+
+.row {
+    display: -ms-flexbox;
+    @include flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    .col-50 {
+        display: grid;
+    }
+}
+
+.row-chk {
+    margin: 6rem 10rem;
+}
+
+.row-nwrp {
+    flex-wrap: nowrap;
+}
+
+.col-25 {
+    -ms-flex: 20%;
+    /* IE10 */
+    flex: 20%;
+    flex: 20%;
+    margin: 3rem 8rem;
+
+    .container {
+        border-style: solid;
+        border-color: burlywood;
+        border-radius: 10px;
+        border-width: 5px;
+        padding: 2rem 2rem;
+    }
+}
+
+.col-75 {
+    -ms-flex: 47%;
+    /* IE10 */
+    flex: 47%;
+    @include paddi(0%, 4%);
+
+    .col-75__container {
+        background-color: #f2f2f2;
+        padding: 2rem 10rem 3rem 2rem;
+        border: 5px solid lightgray;
+        border-radius: 15px;
+        width: 95%;
+
+        .col-75__container-form {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+input[type=text],
+[type=password],
+[type=email] {
+    margin-bottom: 30px;
+    padding: 1.2rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    width: 101%;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    @include paddi(7px, 0px);
+    @include fontsize (24px);
+}
+
+.btn {
+    @include backcolor ($Green);
+    color: $white;
+    @include paddi(12px, 0px);
+    margin: 10px 0;
+    border: none;
+    @include width(100%);
+    @include bradius(10px);
+    cursor: pointer;
+    @include fontsize (17px);
+    transition: background-color 0.6s;
+
+    &:hover {
+        @include backcolor ($LightBlue);
+    }
+}
+
+.btn-fin-pay {
+    background-color: #08DB33;
+    color: white;
+    padding: 15px 30%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.6s;
+    margin: 0rem 15rem;
+    padding: 1rem 20rem 1rem 20rem;
+
+    &:hover {
+        @include backcolor ($LightBlue);
+    }
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+.select-yearr {
+    @include width(100%);
+    @include paddi(8%, 0%);
+    background: white;
+    @include brstyle(solid);
+    @include bradius(3px);
+}
+
+.chk-payments {
+    text-align: right;
+
+    ul {
+        @include flex;
+    }
+
+    h3 {
+        margin: 5px 120px;
+    }
+
+    li:active {
+        @include brstyle(solid);
+        border-color: $DarkGold;
+        border-width: 2px;
+    }
+}
+
+.checkbox-form-contact {
+    @include paddi(2%, 0%);
+}
+
+.buttons-forms-contact {
+    @include paddi(2%, 0%);
+}
+
+.btn-form-contact {
+    @include backcolor ($white);
+    border: 2px;
+    @include brstyle(solid);
+    @include bradius(3px);
+    @include paddi(4px, 10px);
+    border-color: $black;
+}
+
+.email-form-contact {
+    @include paddi(2%, 0%);
+
+    a {
+        border: 5px;
+        @include brstyle(double);
+        @include bradius(3px);
+        @include paddi(2px, 25px);
+    }
+
+    h3 {
+        @include paddi(1%, 0%);
+    }
+}
+
+.select-provincia {
+    width: 100%;
+    padding: 1.2rem 0rem;
+    background: white;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.select-ciudad {
+    width: 100%;
+    padding: 1.2rem 0rem;
+    background: white;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.select-mes {
+    @include width(5%);
+    @include paddi(1%, 0%);
+    background: $white;
+    @include brstyle(solid);
+    @include bradius(3px);
+}
+
+/********************* SIGN IN *******************/
+
+.form-signin {
+    @include width(100%);
+    max-width: 30%;
+    @include paddi(10%, 0%);
+    margin: auto;
+
+    .checkbox {
+        font-weight: 400;
+    }
+
+    .form-floating:focus-within {
+        z-index: 2;
+    }
+
+    input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+/************************* BOOTSTRAP ************************/
+
+.boot-logo {
+    @include fontsize (17px);
+}
+
+/***** CAROUSEL *****/
+
+.carousel-item {
+    margin-right: -78% !important;
+}
+
+.carousel-inner {
+    margin: 0% 0% !important;
+}
+
+/**************************404********************************/
+
+.page_404 {
+    @include txtcenter;
+    @include paddi(1%, 30%);
+
+    .container {
+        @include bradius(15px);
+    }
+
+    h1 {
+        @include fontsize (8rem);
+    }
+
+    .row {
+        @include paddi(5%, 0%);
+    }
+}
+
+.box_404 {
+    @include txtcenter;
+    @include fontsize (1.3rem);
+    @include paddi(2%, 0%);
+
+    .box_404__heading {
+        @include fontsize (2.6rem);
+    }
+
+    .box_404__link {
+        @include brstyle(solid);
+        @include bradius(15px);
+        @include paddi(8px, 40px);
+        border-width: 3px;
+
+        &:hover {
+            @include backcolor ($LightBlue);
+            color: $white;
+            transition: background-color 0.2s;
+            border-width: 3px;
+        }
+    }
+
+}
+
+/************************PAYMENT*****************************/
+.box_pay {
+    @include txtcenter;
+    @include fontsize (1.3rem);
+}
+
+.page_pay {
+    @include txtcenter;
+    padding: 4rem 23rem;
+
+    h1 {
+        margin: 2rem 0rem;
+    }
+}
+
+.form_pay {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 25rem;
+
+    .container {
+        @include paddi(3%, 0%);
+    }
+}
+
+.finish_pay {
+    @include paddi(1%, 15%);
+    @include brstyle(solid);
+    @include bradius(15px);
+    background-color: #06bd00;
+    border-width: 1px;
+    color: white;
+    border-width: 1px;
+
+    &:hover {
+        color: #fff;
+        background-color: #0d19cc;
+    }
+}
+
+/*-----------------------------------
+        Seccion Orden-Pago
+-----------------------------------*/
+
+.breadcrumb>.active a {
+    color: #468595;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.breadcrumb li a {
+    color: #b3d4dc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.6rem;
+}
+
+.breadcrumb>li+li:before {
+    content: "\00BB";
+}
+
+.breadcrumb {
+    margin-bottom: 100px;
+    background-color: #ffffff;
+    padding: 2rem 0rem;
+    justify-content: center;
+    margin: 0rem 0rem;
+}
+
+.breadcrumbBox {
+    background-color: #ffffff;
+    height: 100px;
+    margin-bottom: 100px;
+    padding-top: 32px;
+}
+
+/********************************************MEDIA QUERIES**********************************************/
+
+/*** #Device = Tablets, Ipads (portrait) - #Screen = B/w 768px to 1024px ***/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .pre-nav h4 {
+        font-size: 1.5rem;
+        margin: 0.8rem 0rem;
+    }
+
+    .chk-left-nav {
+        margin: 2rem 4rem;
+    }
+
+    .chk-ul-right-nav {
+        padding-left: 22rem;
+    }
+
+
+    .foot .social {
+        margin: 0px;
+        @include txtcenter;
+    }
+
+    .payments {
+        ul {
+            @include flex;
+            justify-content: center;
+            padding-left: 0%;
+        }
+
+        h3 {
+            margin: 0px 0px;
+            @include txtcenter;
+        }
+    }
+
+    #abt-us {
+
+        h3,
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    #abt-map .g_map {
+        width: 46rem;
+        margin-left: 1rem;
+    }
+
+    .sec-help-g-map {
+        width: 45rem;
+    }
+
+    .credit-card {
+        img {
+            width: 6rem;
+            padding: 1rem 1rem;
+        }
+    }
+
+    .crypto-coins {
+        img {
+            width: 6rem;
+            padding: 1rem 1rem;
+        }
+    }
+
+    .debit-card {
+        img {
+            width: 8rem;
+        }
+    }
+
+    .efecti {
+        img {
+            width: 8rem;
+        }
+    }
+
+    .virtual-wallet-logo {
+        img {
+            width: 8rem;
+        }
+    }
+
+    .boot-icon {
+        font-size: 2.4rem;
+    }
+
+    ol,
+    ul {
+        padding-left: 0rem;
+    }
+
+    /****************CONTACT**************/
+
+    .form-contact {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        .email-form-contact {
+            margin: 3rem 0rem;
+
+            a {
+                border: 4px;
+                border-radius: 6px;
+                padding: 0.8rem 5rem;
+                border-style: double;
+            }
+        }
+
+        .form-contact-input {
+            width: 40%;
+            margin: 0.8rem 4rem;
+        }
+    }
+
+    /*****************FOOTER****************************/
+
+    .footer__payments_credit-card {
+        margin-left: 1rem;
+        width: 2rem;
+    }
+
+    .footer p.footer__links {
+        font-size: 0.85rem;
+    }
+
+    /********************LOGIN*********************/
+    .btn {
+        padding: 0.7rem;
+        margin: 0.5rem 0rem;
+        font-size: 1.2rem;
+    }
+
+    /*********************PAY*******************/
+
+    .page_pay {
+        text-align: center;
+        padding: 1rem 10rem;
+
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    input[type="text"],
+    [type="password"],
+    [type="email"] {
+        margin-bottom: 0.8rem;
+        padding: 1rem 1rem;
+    }
+
+    .finish_pay {
+        padding: 0.5rem 4rem;
+    }
+
+    .form_pay {
+        margin: 2rem 3rem;
+    }
+
+    /**************************CHECKOUT*****************/
+    .col-25 {
+        margin: 2rem 2rem;
+    }
+
+    .col-75__container {
+        background-color: #f2f2f2;
+        padding: 2rem 3rem 3rem 3rem;
+        border: 5px solid lightgray;
+        border-radius: 15px;
+        width: 88%;
+    }
+
+    .btn-fin-pay {
+        margin: 0rem 1.5rem;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+}
+
+/*** #Device = Low Resolution Tablets, Mobiles (Landscape) - #Screen = B/w 481px to 767px ***/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .top-ul {
+        @include flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .payments {
+
+        h3 {
+            @include txtcenter;
+            margin: 0px 0px;
+        }
+
+        ul {
+            @include flex;
+            margin-left: none;
+            padding-left: 0%;
+            justify-content: center;
+        }
+    }
+
+}
+
+/*** #Device = Most of the Smartphones Mobiles (Portrait) - #Screen = B/w 320px to 479px ***/
+@media (min-width: 320px) and (max-width: 479px) {
+
+    .top-ul {
+        display: none;
+    }
+
+    #menuuu:checked~ul {
+        display: block;
+    }
+
+    .chk-ul-right-nav img {
+        width: 2.6rem;
+    }
+
+
+    .label-ham-menu {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+
+    img {
+        width: 9.6rem;
+    }
+
+    .pre-nav {
+        width: auto;
+        @include relative;
+        @include paddi(auto, auto);
+
+        h4 {
+            @include width(100%);
+            display: inline-block;
+            @include relative;
+            font-size: 1.03rem;
+            margin: 0.8rem 0rem;
+        }
+    }
+
+    .top-ul {
+        @include width(100%);
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brands ul {
+        align-items: center;
+        @include flex;
+        flex-direction: column;
+    }
+
+    .payments {
+        @include txtcenter;
+
+        ul {
+            @include flex;
+            justify-content: center;
+        }
+    }
+
+    .media-video {
+        width: 23rem;
+    }
+
+    #abt-us {
+
+        h3,
+        h4 {
+            font-size: 1rem;
+        }
+    }
+
+    #abt-map .g_map {
+        width: 80%;
+    }
+
+    .ul__container-div {
+        width: 60%;
+        margin: 1.2rem 5rem;
+    }
+
+    .ol,
+    ul {
+        padding-left: 0rem;
+    }
+
+    /*******************CONTACT**********************************/
+    .form-contact {
+        .form-contact-input {
+            padding: 0.6rem 1rem;
+            width: 50%;
+            margin: 0.6rem 2rem;
+        }
+
+        .checkbox-form-contact {
+            font-size: 1.1rem;
+        }
+
+        textarea {
+            resize: vertical;
+            overflow: hidden;
+            margin: 1rem 0rem;
+            width: 22rem;
+            text-align: center;
+        }
+
+        .email-form-contact {
+            padding: 2rem 0rem;
+
+            h3 {
+                margin: 3rem 1rem;
+            }
+        }
+    }
+
+    /*******************************LOGIN*****************************/
+    .form-floating {
+        position: relative;
+        padding: 10% 0%;
+        width: 100%;
+    }
+
+    .btn {
+        padding: 0.7rem 0rem;
+        font-size: 1.063rem;
+    }
+
+    /**************************************HELP**************************/
+
+    .sec-help-g-map {
+        width: 20rem;
+    }
+
+    .credit-card h3,
+    .virtual-wallet-head h3 {
+        font-size: 1rem;
+    }
+
+    .debit-card .debit-card-logo-img {
+        width: 6.8rem;
+    }
+
+    .credit-card .credit-card-logo-img {
+        width: 4.5rem;
+        padding: 0.3rem 0.3rem;
+    }
+
+    .crypto-coins .crypto-coins-logo-img {
+        width: 3.8rem;
+        padding: 0.6rem 0.2rem;
+    }
+
+    .efecti .efecti-logo-img {
+        width: 7.6rem;
+    }
+
+    .virtual-wallet-logo .virtual-wallet-logo-img {
+        width: 7.2rem;
+    }
+
+    /*******************************PAY **********************************/
+    .card-wrapper {
+        max-width: 13rem;
+        width: 100%;
+        margin: 0rem 4.5rem !important;
+        overflow-x: hidden;
+        overflow: hidden;
+    }
+
+    .form_pay {
+        margin: 2rem 4rem;
+    }
+
+    .page_pay {
+        padding: 0rem 0rem;
+    }
+
+    /**************************CHECKOUT*****************************/
+
+    .row-chk {
+        margin: 3rem 0rem;
+    }
+
+    .chk-ul-right-nav {
+        margin: 2.7rem 2rem;
+        padding-left: 0px;
+    }
+
+    .chk-left-nav {
+        margin: 3rem 3rem;
+    }
+
+    .col-75__container {
+        padding: 2rem 2rem 4rem 2rem;
+        width: 100%;
+    }
+
+    .btn-fin-pay {
+        margin: 0rem 2rem;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .col-25 {
+        margin: 2rem 0rem;
+    }
+
+    .col-75__container-form {
+        margin-bottom: 3rem;
+    }
+
+    /*********************************FOOTER *****************/
+    .footer .footer__redes {
+        margin-top: 1rem;
+    }
+
+    .boot-icon {
+        font-size: 2.3rem;
+    }
+
+    .footer__payments_credit-card {
+        display: inline-block;
+        margin-left: 0.65rem;
+    }
+
+    .footer p.footer__links {
+        font-size: 0.85rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .footer__payments img {
+        width: 1.7rem;
+    }
+
+}

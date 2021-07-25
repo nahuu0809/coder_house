@@ -1,0 +1,45 @@
+@mixin paddi ($per1, $per2) {
+    padding: $per1 $per2;
+}
+
+@mixin width ($px) {
+    width: $px;
+}
+
+@mixin relative {
+    position: relative;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin fontsize ($var) {
+    font-size: $var;
+}
+
+@mixin bradius ($px) {
+    border-radius: $px;
+}
+
+@mixin brstyle ($var) {
+    border-style: $var;
+}
+
+@mixin border ($var1, $var2, $var3, $var4) {
+    border-style: $var1;
+    border-radius: $var2;
+    border-color: $var3;
+    border-width: $var4;
+
+}
+
+@mixin backcolor ($var) {
+    background-color: $var;
+}
+
+@mixin txtcenter {
+    text-align: center;
+}
+
+@mixin button-hov {}
