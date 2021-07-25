@@ -13,7 +13,7 @@
 /**************NAV**************/
 
 .container-header {
-    @include width(100%);
+    @include width (100%);
 }
 
 .nav-logo:hover {
@@ -24,21 +24,21 @@
     @include txtcenter;
     @include backcolor ($DarkGold);
     color: $white;
-    @include width(100%);
+    @include width (100%);
     padding: 0.75% 0%;
 
     h4 {
-        @include width(100%);
+        @include width (100%);
         display: inline-block;
-        @include relative;
+        position: relative;
     }
 }
 
 .top-nav {
     @include backcolor ($DarkBlue);
-    @include width(100%);
+    @include width (100%);
     @include flex;
-    @include fontsize (1.149rem);
+    @include font (1.149rem);
     padding: 1.5rem 0rem;
 
     li:hover {
@@ -46,28 +46,24 @@
             display: block;
             color: $red;
             @include backcolor ($DarkBlue);
-            @include bradius(5px);
+            @include bradius (5px);
             padding: 0.6rem 0.8rem;
         }
     }
 
     .top-ul {
-        @include width(100%);
-        @include flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        @include width (100%);
+        @include disp-pos (flex, 0, row, space-evenly);
         align-items: center;
         padding-left: 0%;
 
         li {
-            @include relative;
+            @include disp-pos(0, relative);
         }
 
         .btn-nav {
-            @include brstyle(solid);
-            @include paddi(6px, 10px);
-            @include bradius(10px);
-            border-color: $Cian;
+            @include border (solid, 10px, $Cian);
+            @include paddi (6px, 10px);
 
             a {
                 color: $white;
@@ -80,14 +76,13 @@
         }
 
         .sub-ul {
-            display: none;
-            position: absolute;
+            @include disp-pos(none, absolute);
             top: 30px;
 
             a:hover {
                 @include backcolor ($VioletNeon);
                 color: $Cian;
-                @include bradius(3px);
+                @include bradius (3px);
                 font-weight: bold;
                 transition: background-color 0.2s;
             }
@@ -99,14 +94,13 @@
     @include txtcenter;
 
     a {
-        @include flex;
-        flex-direction: row;
-        @include paddi(12%, 10%);
+        @include disp-pos (flex, 0, row);
+        @include paddi (12%, 10%);
         color: $white;
     }
 
     img {
-        @include paddi(4%, 8%);
+        @include paddi (4%, 8%);
     }
 }
 
@@ -115,28 +109,24 @@
 }
 
 .chk-ul-right-nav {
-    @include flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
+    @include disp-pos (flex, 0, column-reverse, flex-end);
     color: $white;
     padding-left: 55rem;
     margin: 2rem 0rem;
 }
 
 .myCart {
-    @include flex;
-    flex-direction: row-reverse;
-    @include paddi(0%, 2%);
+    @include disp-pos (flex, 0, row-reverse);
+    @include paddi (0%, 2%);
 }
 
 /**************BRANDS**************/
 .brands {
-    @include paddi(3%, 0%);
+    @include paddi (3%, 0%);
 
     h1 {
-        text-decoration: underline;
+        @include font (0, center, 0, underline);
         color: #080B0D;
-        @include txtcenter;
     }
 }
 
@@ -146,11 +136,10 @@
 
 /**************DISCOUNTS**************/
 .discounts {
+    @include font (0, center, bolder);
     color: white;
-    font-weight: bolder;
     @include backcolor ($black);
-    @include txtcenter;
-    @include paddi(4%, 0%);
+    @include paddi (4%, 0%);
 }
 
 h2 {
@@ -169,29 +158,24 @@ h2 {
 /******DRINKS****/
 .drinks{
     background-color: black;
-color: white;
+    color: white;
 }
 
 
 /***********3 PASOS*******************/
 .main-section-delivery {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    @include disp-pos (flex, 0, 0, center, row wrap);
     align-items: center;
     min-height: 50vh;
 }
 
 .contenedorMain .main-section-delivery .section-delivery-contenido {
+    @include disp-pos (flex, 0, 0, space-around, row wrap);
     background-color: black;
     border-radius: 10px;
     width: 80%;
-    display: flex;
-    flex-flow: row wrap;
     margin: 10px;
     padding: 10px;
-    padding: 10px;
-    justify-content: space-around;
 }
 
 .contenedorMain .main-section-delivery .section-delivery-contenido .paso-1,
@@ -202,20 +186,17 @@ color: white;
 }
 
 .contenedorMain .main-section-delivery .section-delivery-contenido .icono {
-    font-size: 6rem;
-    text-align: center;
+    @include font (6rem, center);
     margin-bottom: 5px;
 }
 
 .contenedorMain .main-section-delivery .section-delivery-contenido h3 {
-    text-align: center;
-    font-size: 3rem;
+    @include font (3rem, center);
     font-family: "Montserrat", sans-serif;
 }
 
 .contenedorMain .main-section-delivery .section-delivery-contenido p {
-    text-align: center;
-    font-size: 1.2rem;
+    @include font (1.2rem, center);
     font-family: "Mulish", sans-serif;
 }
 
@@ -224,15 +205,15 @@ color: white;
     @include backcolor ($DarkBlue);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
-    @include width(100%);
+    @include width (100%);
     text-align: left;
     font: normal 16px sans-serif;
-    @include paddi(2%, 0%);
+    @include paddi (2%, 0%);
 
     .footer__datos {
         p {
             color: $GreyFooterText;
-            @include fontsize (14px);
+            @include font(14px);
             margin: 0;
             @include txtcenter;
         }
@@ -240,43 +221,42 @@ color: white;
 
     .footer__redes {
         margin-top: 6px;
-        @include width(100%);
+        @include width (100%);
         @include txtcenter;
 
         a {
-            display: inline-block;
+            @include disp-pos (inline-block);
             margin-left: 16px;
             margin-bottom: 10px;
 
             &:hover {
                 background-color: $Cian;
-                @include paddi(5px, 8px);
-                @include bradius(20%);
+                @include paddi (5px, 8px);
+                @include bradius (20%);
             }
         }
     }
 
     .footer__links {
         a:before {
+            @include disp-pos (inline-block);
             content: "·";
-            @include fontsize (20px);
+            @include font (20px);
             left: 0;
             color: #fff;
-            display: inline-block;
             padding-right: 5px;
         }
     }
 
     p.footer__links {
-        @include fontsize (14px);
-        font-weight: bold;
+        @include font (14px, 0, bold);
         color: #FFFFFF;
         margin: 10px 0 10px 0;
-        @include paddi(0px, 0px);
+        @include paddi (0px, 0px);
         transition: ease .25s;
 
         a {
-            display: inline-block;
+            @include disp-pos (inline-block);
             line-height: 1.8;
             text-decoration: none;
             color: inherit;
@@ -298,7 +278,7 @@ color: white;
 }
 
 .footer__payments_credit-card {
-    display: inline-block;
+    @include disp-pos (inline-block);
     margin-left: 10px;
 
     &:hover {
@@ -310,8 +290,7 @@ color: white;
     text-align: right;
 
     ul {
-        @include flex;
-        justify-content: center;
+        @include disp-pos (flex, 0, 0, center);
     }
 
     /*h3{
@@ -325,7 +304,7 @@ color: white;
 .sec-help {
     list-style-type: none;
     @include txtcenter;
-    @include paddi(1.3%, 0%);
+    @include paddi (1.3%, 0%);
 
     h2 {
         text-decoration: underline;
@@ -337,28 +316,25 @@ color: white;
     @include backcolor (CurrentColor);
 
     h2 {
-        @include fontsize (2rem);
-        @include paddi(1%, 0%);
-        @include txtcenter;
+        @include font (2rem, center);
+        @include paddi (1%, 0%);
         color: $white;
     }
 
     h3,
     h4 {
-        @include fontsize (1.3rem);
-        @include txtcenter;
+        @include font (1.3rem, center);
         color: $white;
     }
 }
 
 #abt-map {
-    @include paddi(1%, 0%);
+    @include paddi (1%, 0%);
 
     .g_map {
-        @include brstyle(double);
-        @include bradius(40px);
-        @include paddi(1%, 1%);
-        @include width(90%);
+        @include border (double, 40px);
+        @include paddi (1%, 1%);
+        @include width (90%);
         margin-left: 5%;
     }
 }
@@ -366,12 +342,11 @@ color: white;
 /**************PRODUCTS**************/
 
 .ul__container-div {
-    @include brstyle(double);
+    @include border (double, 15px, $Cian);
     margin: 4% 3%;
     display: inline-block;
-    @include bradius(15px);
     @include backcolor ($DarkCian);
-    border-color: $Cian;
+
 }
 
 .ul-vka,
@@ -381,18 +356,16 @@ color: white;
 
 .cant,
 .addToCart {
-    @include brstyle(solid);
+    @include border (solid, 10px, $Cian);
     @include backcolor (transparent);
     @include txtcenter;
     color: $white;
-    @include bradius(10px);
-    @include paddi(1%, 0%);
-    border-color: $Cian;
+    @include paddi (1%, 0%);
 }
 
 .cant {
     margin: 0% 2%;
-    @include width(20%);
+    @include width (20%);
 
     &:hover {
         color: #000;
@@ -410,7 +383,7 @@ ul {
 
 .addToCart {
     margin: 5% 20%;
-    @include width(65%);
+    @include width (65%);
 
     &:hover {
         color: #000;
@@ -435,7 +408,7 @@ ul {
 }
 
 .vodka-container img {
-    @include width(100%);
+    @include width (100%);
 }
 
 .vodka-cotainer,
@@ -447,13 +420,12 @@ h2 {
 /*PUBLICITY SECTION*/
 .prd-publicity {
     @include txtcenter;
-    @include fontsize (larger);
-    text-decoration: underline;
-    @include width(100%);
+    @include font (larger, 0, 0, underline);
+    @include width (100%);
 }
 
 .prd-commercial {
-    @include width(100%);
+    @include width (100%);
 }
 
 /**************CONTACT FORM**************/
@@ -465,11 +437,10 @@ h2 {
     }
 
     .form-contact-input {
-        @include paddi(1%, 2%);
-        border: 2px solid #ccc;
-        @include bradius(10px);
+        @include paddi (1%, 2%);
+        @include border (solid, 10px, #ccc);
         -webkit-appearance: none;
-        @include width(12%);
+        @include width (12%);
         margin: 1% 4%;
     }
 }
@@ -478,68 +449,64 @@ h2 {
 /************HELP ****/
 
 .sec-help-g-map {
-    @include paddi(1%, 0%);
-    @include bradius(40px);
-    @include brstyle(solid);
-    @include width(30%);
+    @include border (solid, 40px);
+    @include paddi (1%, 0%);
+    @include width (30%);
     margin: 1% 1%;
 }
 
 .credit-card {
     h2 {
-        @include fontsize (2rem);
-        @include paddi(1%, 0%);
-        @include txtcenter;
+        @include font (2rem, center);
+        @include paddi (1%, 0%);
 
     }
 
     h3 {
-        @include fontsize (1.3rem);
-        @include txtcenter;
+        @include font (1.3rem, center);
     }
 
     h4 {
-        @include fontsize (1.3rem);
-        @include txtcenter;
-        @include paddi(1%, 0%);
+        @include font (1.3rem, center);
+        @include paddi (1%, 0%);
     }
 
     .credit-card-logo-img {
-        @include width(10%);
-        @include paddi(2%, 2%);
+        @include width (10%);
+        @include paddi (2%, 2%);
     }
 }
 
 .crypto-coins {
     .crypto-coins-logo-img {
-        @include width(10%);
-        @include paddi(2%, 2%);
+        @include width (10%);
+        @include paddi (2%, 2%);
     }
 }
 
 .debit-card {
     .debit-card-logo-img {
-        @include width(10%);
+        @include width (10%);
     }
 }
 
 .efecti {
     h4 {
-        @include paddi(1%, 0%);
+        @include paddi (1%, 0%);
     }
 
     .efecti-logo-img {
-        @include width(10%);
+        @include width (10%);
     }
 }
 
 .virtual-wallet-head {
-    @include paddi(1%, 0%);
+    @include paddi (1%, 0%);
 }
 
 .virtual-wallet-logo {
     .virtual-wallet-logo-img {
-        @include width(10%);
+        @include width (10%);
     }
 }
 
@@ -612,7 +579,7 @@ h2 {
 }
 
 .fotosgrid {
-    @include width(100%);
+    @include width (100%);
     display: block;
 }
 
@@ -633,7 +600,7 @@ h2 {
 .layer {
     background-color: rgba(0, 0, 0, 0.227);
     position: absolute;
-    @include width(100%);
+    @include width (100%);
     z-index: 2;
     top: 0;
     right: 0;
@@ -641,7 +608,7 @@ h2 {
 }
 
 .boot-icon {
-    @include fontsize (35px);
+    @include font (35px);
     color: white;
 }
 
@@ -649,7 +616,7 @@ h2 {
 
 .row {
     display: -ms-flexbox;
-    @include flex;
+    @include disp-pos (flex, 0, 0, 0, 0, wrap);
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     overflow: hidden;
@@ -675,10 +642,7 @@ h2 {
     margin: 3rem 8rem;
 
     .container {
-        border-style: solid;
-        border-color: burlywood;
-        border-radius: 10px;
-        border-width: 5px;
+        @include border (solid, 10px, burlywood ,5px);
         padding: 2rem 2rem;
     }
 }
@@ -688,12 +652,10 @@ h2 {
     /* IE10 */
     flex: 47%;
     @include paddi(0%, 4%);
-
     .col-75__container {
         background-color: #f2f2f2;
         padding: 2rem 10rem 3rem 2rem;
-        border: 5px solid lightgray;
-        border-radius: 15px;
+        @include border (solid, 15px, lightgray, 5px);
         width: 95%;
 
         .col-75__container-form {
@@ -707,8 +669,7 @@ input[type=text],
 [type=email] {
     margin-bottom: 30px;
     padding: 1.2rem 1rem;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+    @include border (solid, 8px, #ccc, 2px);
     -webkit-appearance: none;
     width: 101%;
 }
@@ -720,20 +681,20 @@ label {
 
 .icon-container {
     margin-bottom: 20px;
-    @include paddi(7px, 0px);
-    @include fontsize (24px);
+    @include paddi (7px, 0px);
+    @include font (24px);
 }
 
 .btn {
     @include backcolor ($Green);
     color: $white;
-    @include paddi(12px, 0px);
+    @include paddi (12px, 0px);
     margin: 10px 0;
     border: none;
-    @include width(100%);
-    @include bradius(10px);
+    @include width (100%);
+    @include bradius (10px);
     cursor: pointer;
-    @include fontsize (17px);
+    @include font (17px);
     transition: background-color 0.6s;
 
     &:hover {
@@ -747,7 +708,7 @@ label {
     padding: 15px 30%;
     border: none;
     border-radius: 10px;
-    font-size: 18px;
+    @include font (18px);
     transition: background-color 0.6s;
     margin: 0rem 15rem;
     padding: 1rem 20rem 1rem 20rem;
@@ -763,11 +724,10 @@ span.price {
 }
 
 .select-yearr {
-    @include width(100%);
-    @include paddi(8%, 0%);
+    @include width (100%);
+    @include paddi (8%, 0%);
     background: white;
-    @include brstyle(solid);
-    @include bradius(3px);
+    @include border (solid, none ,3px);
 }
 
 .chk-payments {
@@ -782,41 +742,34 @@ span.price {
     }
 
     li:active {
-        @include brstyle(solid);
-        border-color: $DarkGold;
-        border-width: 2px;
+        @include border (solid, 0 ,$DarkGold, 2px);
     }
 }
 
 .checkbox-form-contact {
-    @include paddi(2%, 0%);
+    @include paddi (2%, 0%);
 }
 
 .buttons-forms-contact {
-    @include paddi(2%, 0%);
+    @include paddi (2%, 0%);
 }
 
 .btn-form-contact {
     @include backcolor ($white);
-    border: 2px;
-    @include brstyle(solid);
-    @include bradius(3px);
-    @include paddi(4px, 10px);
-    border-color: $black;
+    @include border (solid, 3px, $black, 2px);
+    @include paddi (4px, 10px);
 }
 
 .email-form-contact {
-    @include paddi(2%, 0%);
+    @include paddi (2%, 0%);
 
     a {
-        border: 5px;
-        @include brstyle(double);
-        @include bradius(3px);
-        @include paddi(2px, 25px);
+        @include border (double, 3px, none ,5px);
+        @include paddi (2px, 25px);
     }
 
     h3 {
-        @include paddi(1%, 0%);
+        @include paddi (1%, 0%);
     }
 }
 
@@ -824,32 +777,29 @@ span.price {
     width: 100%;
     padding: 1.2rem 0rem;
     background: white;
-    border-style: solid;
-    border-radius: 8px;
+    @include border (solid, 8px);
 }
 
 .select-ciudad {
     width: 100%;
     padding: 1.2rem 0rem;
     background: white;
-    border-style: solid;
-    border-radius: 8px;
+    @include border (solid, 8px);
 }
 
 .select-mes {
-    @include width(5%);
-    @include paddi(1%, 0%);
+    @include width (5%);
+    @include paddi (1%, 0%);
     background: $white;
-    @include brstyle(solid);
-    @include bradius(3px);
+    @include border (solid, 3px);
 }
 
 /********************* SIGN IN *******************/
 
 .form-signin {
-    @include width(100%);
+    @include width (100%);
     max-width: 30%;
-    @include paddi(10%, 0%);
+    @include paddi (10%, 0%);
     margin: auto;
 
     .checkbox {
@@ -876,7 +826,7 @@ span.price {
 /************************* BOOTSTRAP ************************/
 
 .boot-logo {
-    @include fontsize (17px);
+    @include font (17px);
 }
 
 /***** CAROUSEL *****/
@@ -893,35 +843,32 @@ span.price {
 
 .page_404 {
     @include txtcenter;
-    @include paddi(1%, 30%);
+    @include paddi (1%, 30%);
 
     .container {
-        @include bradius(15px);
+        @include bradius (15px);
     }
 
     h1 {
-        @include fontsize (8rem);
+        @include font (8rem);
     }
 
     .row {
-        @include paddi(5%, 0%);
+        @include paddi (5%, 0%);
     }
 }
 
 .box_404 {
-    @include txtcenter;
-    @include fontsize (1.3rem);
-    @include paddi(2%, 0%);
+    @include font (1.3rem, center);
+    @include paddi (2%, 0%);
 
     .box_404__heading {
-        @include fontsize (2.6rem);
+        @include font (2.6rem);
     }
 
     .box_404__link {
-        @include brstyle(solid);
-        @include bradius(15px);
-        @include paddi(8px, 40px);
-        border-width: 3px;
+        @include border (solid, 15px, none, 3px);
+        @include paddi (8px, 40px);
 
         &:hover {
             @include backcolor ($LightBlue);
@@ -935,8 +882,7 @@ span.price {
 
 /************************PAYMENT*****************************/
 .box_pay {
-    @include txtcenter;
-    @include fontsize (1.3rem);
+    @include font (1.3rem, center);
 }
 
 .page_pay {
@@ -949,23 +895,19 @@ span.price {
 }
 
 .form_pay {
-    display: flex;
-    flex-direction: column;
+    @include disp-pos (flex,0,column);
     margin: 2rem 25rem;
 
     .container {
-        @include paddi(3%, 0%);
+        @include paddi (3%, 0%);
     }
 }
 
 .finish_pay {
-    @include paddi(1%, 15%);
-    @include brstyle(solid);
-    @include bradius(15px);
+    @include border (solid, 15px, 0, 1px);
+    @include paddi (1%, 15%);
     background-color: #06bd00;
-    border-width: 1px;
     color: white;
-    border-width: 1px;
 
     &:hover {
         color: #fff;
@@ -1119,10 +1061,8 @@ span.price {
             margin: 3rem 0rem;
 
             a {
-                border: 4px;
-                border-radius: 6px;
+                @include border (double, 6px, 0, 4px);
                 padding: 0.8rem 5rem;
-                border-style: double;
             }
         }
 
@@ -1182,10 +1122,9 @@ span.price {
     }
 
     .col-75__container {
+        @include border (solid, 15px, lightgray, 5px);
         background-color: #f2f2f2;
         padding: 2rem 3rem 3rem 3rem;
-        border: 5px solid lightgray;
-        border-radius: 15px;
         width: 88%;
     }
 
@@ -1199,9 +1138,7 @@ span.price {
 @media (min-width: 481px) and (max-width: 767px) {
 
     .top-ul {
-        @include flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include disp-pos (flex, 0, column, space-evenly);
         align-items: center;
     }
 
@@ -1239,15 +1176,13 @@ span.price {
 
 
     .label-ham-menu {
+        @include border (solid, 5px, $black, 1px);
+        @include font (0, center, bold);
         box-sizing: border-box;
         display: inline-block;
-        border: 1px solid black;
-        border-radius: 5px;
         width: 30px;
         height: 30px;
         line-height: 30px;
-        font-weight: bold;
-        text-align: center;
         user-select: none;
     }
 
@@ -1257,37 +1192,34 @@ span.price {
 
     .pre-nav {
         width: auto;
-        @include relative;
-        @include paddi(auto, auto);
+        position: relative;
+        @include paddi (auto, auto);
 
         h4 {
-            @include width(100%);
+            @include width (100%);
             display: inline-block;
-            @include relative;
+            position: relative;
             font-size: 1.03rem;
             margin: 0.8rem 0rem;
         }
     }
 
     .top-ul {
-        @include width(100%);
-        @include flex;
-        flex-direction: column;
+        @include width (100%);
+        @include disp-pos (flex, 0, column);
         align-items: center;
     }
 
     .brands ul {
         align-items: center;
-        @include flex;
-        flex-direction: column;
+        @include disp-pos (flex, 0, column);
     }
 
     .payments {
         @include txtcenter;
 
         ul {
-            @include flex;
-            justify-content: center;
+            @include disp-pos (flex, 0, 0, center);
         }
     }
 
