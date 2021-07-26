@@ -53,12 +53,12 @@
 
     .top-ul {
         @include width (100%);
-        @include disp-pos (flex, 0, row, space-evenly);
+        @include disp-pos (flex, null, row, space-evenly);
         align-items: center;
         padding-left: 0%;
 
         li {
-            @include disp-pos(0, relative);
+            @include disp-pos (null, relative);
         }
 
         .btn-nav {
@@ -94,7 +94,7 @@
     @include txtcenter;
 
     a {
-        @include disp-pos (flex, 0, row);
+        @include disp-pos (flex, null, row);
         @include paddi (12%, 10%);
         color: $white;
     }
@@ -109,14 +109,14 @@
 }
 
 .chk-ul-right-nav {
-    @include disp-pos (flex, 0, column-reverse, flex-end);
+    @include disp-pos (flex, null, column-reverse, flex-end);
     color: $white;
     padding-left: 55rem;
     margin: 2rem 0rem;
 }
 
 .myCart {
-    @include disp-pos (flex, 0, row-reverse);
+    @include disp-pos (flex, null, row-reverse);
     @include paddi (0%, 2%);
 }
 
@@ -125,7 +125,7 @@
     @include paddi (3%, 0%);
 
     h1 {
-        @include font (0, center, 0, underline);
+        @include font (null, center, null, underline);
         color: #080B0D;
     }
 }
@@ -136,7 +136,7 @@
 
 /**************DISCOUNTS**************/
 .discounts {
-    @include font (0, center, bolder);
+    @include font (null, center, bolder);
     color: white;
     @include backcolor ($black);
     @include paddi (4%, 0%);
@@ -164,13 +164,13 @@ h2 {
 
 /***********3 PASOS*******************/
 .main-section-delivery {
-    @include disp-pos (flex, 0, 0, center, row wrap);
+    @include disp-pos (flex, null, null, center, row wrap);
     align-items: center;
     min-height: 50vh;
 }
 
 .contenedorMain .main-section-delivery .section-delivery-contenido {
-    @include disp-pos (flex, 0, 0, space-around, row wrap);
+    @include disp-pos (flex, null, null, space-around, row wrap);
     background-color: black;
     border-radius: 10px;
     width: 80%;
@@ -198,104 +198,6 @@ h2 {
 .contenedorMain .main-section-delivery .section-delivery-contenido p {
     @include font (1.2rem, center);
     font-family: "Mulish", sans-serif;
-}
-
-/****************************FOOTER****************************/
-.footer {
-    @include backcolor ($DarkBlue);
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    @include width (100%);
-    text-align: left;
-    font: normal 16px sans-serif;
-    @include paddi (2%, 0%);
-
-    .footer__datos {
-        p {
-            color: $GreyFooterText;
-            @include font(14px);
-            margin: 0;
-            @include txtcenter;
-        }
-    }
-
-    .footer__redes {
-        margin-top: 6px;
-        @include width (100%);
-        @include txtcenter;
-
-        a {
-            @include disp-pos (inline-block);
-            margin-left: 16px;
-            margin-bottom: 10px;
-
-            &:hover {
-                background-color: $Cian;
-                @include paddi (5px, 8px);
-                @include bradius (20%);
-            }
-        }
-    }
-
-    .footer__links {
-        a:before {
-            @include disp-pos (inline-block);
-            content: "·";
-            @include font (20px);
-            left: 0;
-            color: #fff;
-            padding-right: 5px;
-        }
-    }
-
-    p.footer__links {
-        @include font (14px, 0, bold);
-        color: #FFFFFF;
-        margin: 10px 0 10px 0;
-        @include paddi (0px, 0px);
-        transition: ease .25s;
-
-        a {
-            @include disp-pos (inline-block);
-            line-height: 1.8;
-            text-decoration: none;
-            color: inherit;
-            transition: ease .25s;
-
-            &:hover {
-                color: $VioletNeon;
-            }
-        }
-    }
-}
-
-.enlaces_footer {
-    color: $Cian;
-
-    &:hover {
-        color: $VioletNeon;
-    }
-}
-
-.footer__payments_credit-card {
-    @include disp-pos (inline-block);
-    margin-left: 10px;
-
-    &:hover {
-        transform: scale(115%);
-    }
-}
-
-.footer__payments {
-    text-align: right;
-
-    ul {
-        @include disp-pos (flex, 0, 0, center);
-    }
-
-    /*h3{
-                    margin: 5px 120px;
-                }*/
 }
 
 /**************PAYMENT METHODS**************/
@@ -381,6 +283,18 @@ ul {
     padding-left: 0rem;
 }
 
+.card-products{
+    @include border(solid, 12px, #0caebf);
+    width: 18rem;
+    margin: 3rem 2rem;
+    color: white;
+    display: inline-block;
+    background-color: #04393999;
+}
+
+
+
+
 .addToCart {
     margin: 5% 20%;
     @include width (65%);
@@ -396,11 +310,53 @@ ul {
 
 /*DRINKS SECTION*/
 
-.wines,
-.vodka,
-.beer,
-.champagne {
+.wines{
     @include txtcenter;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/winee1.jpg);
+    background-size: cover;
+    h2{
+        background-color: deeppink;
+        .h2-img{
+            width: 5rem;
+        }
+    }
+}
+
+.vodka{
+    @include txtcenter;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/ciro.jpg);
+    background-size: cover;
+    h2{
+        background-color: #fffffff2;
+        color: black;
+        .h2-img{
+            width: 5rem;
+        } 
+    }
+}
+
+.beer{
+    @include txtcenter;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/ber33.jpg);
+    background-size: cover;
+    h2{
+        background-color: #F0B01AED;
+        .h2-img{
+            width: 5rem;
+        } 
+    }
+}
+
+.champagne{
+    @include txtcenter;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/champ22.jpg);
+    background-size: cover;
+    h2{
+        background-color: #F2C288;
+        .h2-img{
+            width: 5rem;
+        } 
+    }
 }
 
 .drinks img:hover {
@@ -414,14 +370,15 @@ ul {
 .vodka-cotainer,
 h2 {
     @include txtcenter;
+    padding: 2rem 0rem;
 }
-
 
 /*PUBLICITY SECTION*/
 .prd-publicity {
     @include txtcenter;
-    @include font (larger, 0, 0, underline);
+    @include font (larger, null, null, underline);
     @include width (100%);
+    background-color: #140091;
 }
 
 .prd-commercial {
@@ -616,7 +573,7 @@ h2 {
 
 .row {
     display: -ms-flexbox;
-    @include disp-pos (flex, 0, 0, 0, 0, wrap);
+    @include disp-pos (flex, null, null, null, null, wrap);
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     overflow: hidden;
@@ -742,7 +699,7 @@ span.price {
     }
 
     li:active {
-        @include border (solid, 0 ,$DarkGold, 2px);
+        @include border (solid, null ,$DarkGold, 2px);
     }
 }
 
@@ -820,6 +777,100 @@ span.price {
         margin-bottom: 10px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+    }
+}
+
+/****************************FOOTER****************************/
+.footer {
+    @include backcolor ($DarkBlue);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    @include width (100%);
+    text-align: left;
+    font: normal 16px sans-serif;
+    @include paddi (2%, 0%);
+
+    .footer__datos {
+        p {
+            color: $GreyFooterText;
+            @include font(14px);
+            margin: 0;
+            @include txtcenter;
+        }
+    }
+
+    .footer__redes {
+        margin-top: 6px;
+        @include width (100%);
+        @include txtcenter;
+
+        a {
+            @include disp-pos (inline-block);
+            margin-left: 16px;
+            margin-bottom: 10px;
+
+            &:hover {
+                background-color: $Cian;
+                @include paddi (5px, 8px);
+                @include bradius (20%);
+            }
+        }
+    }
+
+    .footer__links {
+        a:before {
+            @include disp-pos (inline-block);
+            content: "·";
+            @include font (20px);
+            left: 0;
+            color: #fff;
+            padding-right: 5px;
+        }
+    }
+
+    p.footer__links {
+        @include font (14px, null, bold);
+        color: #FFFFFF;
+        margin: 10px 0 10px 0;
+        @include paddi (0px, 0px);
+        transition: ease .25s;
+
+        a {
+            @include disp-pos (inline-block);
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+            transition: ease .25s;
+
+            &:hover {
+                color: $VioletNeon;
+            }
+        }
+    }
+}
+
+.enlaces_footer {
+    color: $Cian;
+
+    &:hover {
+        color: $VioletNeon;
+    }
+}
+
+.footer__payments_credit-card {
+    @include disp-pos (inline-block);
+    margin-left: 10px;
+
+    &:hover {
+        transform: scale(115%);
+    }
+}
+
+.footer__payments {
+    text-align: right;
+
+    ul {
+        @include disp-pos (flex, null, null, center);
     }
 }
 
@@ -904,7 +955,7 @@ span.price {
 }
 
 .finish_pay {
-    @include border (solid, 15px, 0, 1px);
+    @include border (solid, 15px, null, 1px);
     @include paddi (1%, 15%);
     background-color: #06bd00;
     color: white;
@@ -952,6 +1003,21 @@ span.price {
 }
 
 /********************************************MEDIA QUERIES**********************************************/
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+   /* .btn-coll-mobile{
+      visibility: hidden;
+    }
+
+    .collapseExample {
+        visibility: visible;
+    }
+    
+    .top-ul{
+      visibility: visible;
+    }
+    */
+}
 
 /*** #Device = Tablets, Ipads (portrait) - #Screen = B/w 768px to 1024px ***/
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1061,7 +1127,7 @@ span.price {
             margin: 3rem 0rem;
 
             a {
-                @include border (double, 6px, 0, 4px);
+                @include border (double, 6px, null, 4px);
                 padding: 0.8rem 5rem;
             }
         }
@@ -1138,7 +1204,7 @@ span.price {
 @media (min-width: 481px) and (max-width: 767px) {
 
     .top-ul {
-        @include disp-pos (flex, 0, column, space-evenly);
+        @include disp-pos (flex, null, column, space-evenly);
         align-items: center;
     }
 
@@ -1162,32 +1228,56 @@ span.price {
 /*** #Device = Most of the Smartphones Mobiles (Portrait) - #Screen = B/w 320px to 479px ***/
 @media (min-width: 320px) and (max-width: 479px) {
 
-    .top-ul {
-        display: none;
-    }
+.btn-coll-mobile {
+        @include backcolor ($Green);
+        color: $white;
+        border: none;
+        padding: 0.4rem 0.5rem;
+        margin: 0.2rem 1rem;
+        @include bradius (8px);
+        cursor: pointer;
+        @include font (17px);
+        transition: background-color 0.6s;
+}
 
-    #menuuu:checked~ul {
-        display: block;
-    }
+.img-logo-home{ 
+    width: 1.5rem;
+    margin: 0rem 9rem;
+}
+
+.card {
+    background-color: #9595951c;
+}
+
+.sub-ul ul{
+    display: none;
+
+}
+
+.top-nav .top-ul .btn-nav {
+    padding: 1rem 0.6rem;
+    margin: 0.4rem 0rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 0rem;
+    margin-left: -19rem;
+    @include bradius (14px);
+}
+
+.top-nav .top-ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0%;
+    margin: 2rem 0rem;
+}
 
     .chk-ul-right-nav img {
         width: 2.6rem;
-    }
-
-
-    .label-ham-menu {
-        @include border (solid, 5px, $black, 1px);
-        @include font (0, center, bold);
-        box-sizing: border-box;
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        user-select: none;
-    }
-
-    img {
-        width: 9.6rem;
     }
 
     .pre-nav {
@@ -1206,20 +1296,20 @@ span.price {
 
     .top-ul {
         @include width (100%);
-        @include disp-pos (flex, 0, column);
+        @include disp-pos (flex, null, column);
         align-items: center;
     }
 
     .brands ul {
         align-items: center;
-        @include disp-pos (flex, 0, column);
+        @include disp-pos (flex, null, column);
     }
 
     .payments {
         @include txtcenter;
 
         ul {
-            @include disp-pos (flex, 0, 0, center);
+            @include disp-pos (flex, null, null, center);
         }
     }
 
@@ -1247,6 +1337,18 @@ span.price {
     .ol,
     ul {
         padding-left: 0rem;
+    }
+
+    .card-products {
+        width: 18rem;
+        margin: 2rem 2rem;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        padding: 1rem 0rem;
+        margin-left: 0rem;
+        border-radius: 14px;
     }
 
     /*******************CONTACT**********************************/
@@ -1382,10 +1484,19 @@ span.price {
         font-size: 2.3rem;
     }
 
+    .footer__payments {
+        text-align: center;
+        margin: 1.5rem 1rem;
+        
     .footer__payments_credit-card {
         display: inline-block;
         margin-left: 0.65rem;
+        margin-bottom: 1rem;
     }
+    .footer__payments img {
+        width: 1.7rem;
+    }
+}
 
     .footer p.footer__links {
         font-size: 0.85rem;
@@ -1393,10 +1504,6 @@ span.price {
 
     p {
         font-size: 1rem;
-    }
-
-    .footer__payments img {
-        width: 1.7rem;
     }
 
 }

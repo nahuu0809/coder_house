@@ -10,58 +10,22 @@
     display: flex;
 }
 
-@mixin font ($size, $align, $weight, $deco, $transform) {
+@mixin font ($size, $align: null, $weight: null, $deco: null, $transform: null) {
     font-size: $size;
     text-align: $align;
     font-weight: $weight;
     text-decoration: $deco;
     text-transform: $transform;
 
-    @if $size = 0 {
-        font-size: unset;
-    }
-    @if $align = 0 {
-        text-align: unset;
-    }
-    @if $weight = 0 {
-        font-weight: unset;
-    }
-    @if $deco = 0 {
-        text-decoration: unset;
-    }
-    @if $transform = 0 {
-        text-transform: unset;
-    }
-
 }
 
-    @mixin disp-pos ($var1, $var2, $var3, $var4, $var5, $var6) {
+    @mixin disp-pos($var1: null, $var2: null, $var3: null, $var4: null, $var5: null, $var6: null) {
     display: $var1;
     position: $var2;
     flex-direction: $var3;
     justify-content: $var4;
     flex-flow: $var5;
     flex-wrap: $var6;
-    
-    @if $var1 = 0{
-    display: unset;
-}
-    @if $var2 = 0 {
-    position: unset;
-}
-    @if $var3 = 0 {
-    flex-direction: unset;
-}
-    @if $var4 = 0 {
-    justify-content: unset;
-}
-    @if $var5 = 0 {
-    flex-flow: unset;
-}
-    @if $var6 = 0 { 
-    flex-wrap: unset;
-}
-
 }
 
 @mixin bradius ($px) {
@@ -72,7 +36,7 @@
     border-style: $var;
 }
 
-@mixin border ($var1, $var2, $var3, $var4) {
+@mixin border ($var1, $var2: null, $var3: null, $var4: null) {
     border-style: $var1;
     border-radius: $var2;
     border-color: $var3;
