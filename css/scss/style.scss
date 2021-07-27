@@ -35,7 +35,7 @@
 }
 
 .top-nav {
-    @include backcolor ($DarkBlue);
+    @include backcolor ($DarkBlue !important);
     @include width (100%);
     @include flex;
     @include font (1.149rem);
@@ -46,8 +46,9 @@
             display: block;
             color: $red;
             @include backcolor ($DarkBlue);
-            @include bradius (5px);
+            @include bradius (6px);
             padding: 0.6rem 0.8rem;
+            margin: 0.6rem -0.4rem;
         }
     }
 
@@ -62,8 +63,8 @@
         }
 
         .btn-nav {
-            @include border (solid, 10px, $Cian);
-            @include paddi (6px, 10px);
+            @include border (solid, 12px, $Cian);
+            @include paddi (0.2rem, 0.8rem);
 
             a {
                 color: $white;
@@ -120,6 +121,15 @@
     @include paddi (0%, 2%);
 }
 
+
+/**********HOME***************************************/
+.home{
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/champ22.jpg);
+background-size: cover;
+background-attachment: fixed;
+padding: 20rem 0rem;
+}
+
 /**************BRANDS**************/
 .brands {
     @include paddi (3%, 0%);
@@ -159,45 +169,6 @@ h2 {
 .drinks{
     background-color: black;
     color: white;
-}
-
-
-/***********3 PASOS*******************/
-.main-section-delivery {
-    @include disp-pos (flex, null, null, center, row wrap);
-    align-items: center;
-    min-height: 50vh;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido {
-    @include disp-pos (flex, null, null, space-around, row wrap);
-    background-color: black;
-    border-radius: 10px;
-    width: 80%;
-    margin: 10px;
-    padding: 10px;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido .paso-1,
-.contenedorMain .main-section-delivery .section-delivery-contenido .paso-2,
-.contenedorMain .main-section-delivery .section-delivery-contenido .paso-3 {
-    padding: 5px 10px 5px 10px;
-    margin: 5px 10px 5px 10px;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido .icono {
-    @include font (6rem, center);
-    margin-bottom: 5px;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido h3 {
-    @include font (3rem, center);
-    font-family: "Montserrat", sans-serif;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido p {
-    @include font (1.2rem, center);
-    font-family: "Mulish", sans-serif;
 }
 
 /**************PAYMENT METHODS**************/
@@ -259,7 +230,7 @@ h2 {
 .cant,
 .addToCart {
     @include border (solid, 10px, $Cian);
-    @include backcolor (transparent);
+    @include backcolor ($GreyBlue);
     @include txtcenter;
     color: $white;
     @include paddi (1%, 0%);
@@ -270,11 +241,11 @@ h2 {
     @include width (20%);
 
     &:hover {
-        color: #000;
-        background-color: #00FFE7;
+        color: white;
+        background-color: transparent;
         font-weight: 200;
-        transition: background-color 0.8s;
-        border-color: black;
+        transition: background-color 0.1s;
+        border-color: white;
     }
 }
 
@@ -300,11 +271,11 @@ ul {
     @include width (65%);
 
     &:hover {
-        color: #000;
-        background-color: #00FFE7;
-        font-weight: 200;
-        transition: background-color 0.8s;
-        border-color: black;
+        color: white;
+background-color: transparent;
+font-weight: 200;
+transition: background-color 0.1s;
+border-color: white;
     }
 }
 
@@ -314,6 +285,7 @@ ul {
     @include txtcenter;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/winee1.jpg);
     background-size: cover;
+    background-attachment: fixed;
     h2{
         background-color: deeppink;
         .h2-img{
@@ -326,6 +298,7 @@ ul {
     @include txtcenter;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/ciro.jpg);
     background-size: cover;
+    background-attachment: fixed;
     h2{
         background-color: #fffffff2;
         color: black;
@@ -339,6 +312,7 @@ ul {
     @include txtcenter;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/ber33.jpg);
     background-size: cover;
+    background-attachment: fixed;
     h2{
         background-color: #F0B01AED;
         .h2-img{
@@ -351,6 +325,7 @@ ul {
     @include txtcenter;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/champ22.jpg);
     background-size: cover;
+    background-attachment: fixed;
     h2{
         background-color: #F2C288;
         .h2-img{
@@ -539,8 +514,6 @@ h2 {
     @include width (100%);
     display: block;
 }
-
-/************************************************PRUEBAAAAA*************************************************************/
 
 .section_cervezas_card {
     background-color: rgba(165, 42, 42, 0.281);
@@ -753,6 +726,12 @@ span.price {
 
 /********************* SIGN IN *******************/
 
+.background-login{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/space.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .form-signin {
     @include width (100%);
     max-width: 30%;
@@ -778,6 +757,10 @@ span.price {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
+}
+
+.ft-white{
+    color: white
 }
 
 /****************************FOOTER****************************/
@@ -1255,8 +1238,8 @@ span.price {
 }
 
 .top-nav .top-ul .btn-nav {
-    padding: 1rem 0.6rem;
-    margin: 0.4rem 0rem;
+    padding: 0.6rem 2rem;
+    margin: 0.6rem 0rem;
 }
 
 .card-body {

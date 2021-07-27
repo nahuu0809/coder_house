@@ -46,7 +46,7 @@ BLUE FOR BORDER BUTTONS ADD TO CART, CANT = #061C91 (DarkLightBlue)
 }
 
 .top-nav {
-  background-color: #191D3D;
+  background-color: #191D3D !important;
   width: 100%;
   display: flex;
   font-size: 1.149rem;
@@ -57,8 +57,9 @@ BLUE FOR BORDER BUTTONS ADD TO CART, CANT = #061C91 (DarkLightBlue)
   display: block;
   color: red;
   background-color: #191D3D;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 0.6rem 0.8rem;
+  margin: 0.6rem -0.4rem;
 }
 
 .top-nav .top-ul {
@@ -76,9 +77,9 @@ BLUE FOR BORDER BUTTONS ADD TO CART, CANT = #061C91 (DarkLightBlue)
 
 .top-nav .top-ul .btn-nav {
   border-style: solid;
-  border-radius: 10px;
+  border-radius: 12px;
   border-color: #0caebf;
-  padding: 6px 10px;
+  padding: 0.2rem 0.8rem;
 }
 
 .top-nav .top-ul .btn-nav a {
@@ -138,6 +139,14 @@ BLUE FOR BORDER BUTTONS ADD TO CART, CANT = #061C91 (DarkLightBlue)
   padding: 0% 2%;
 }
 
+/**********HOME***************************************/
+.home {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/champ22.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20rem 0rem;
+}
+
 /**************BRANDS**************/
 .brands {
   padding: 3% 0%;
@@ -179,51 +188,6 @@ h2 {
 .drinks {
   background-color: black;
   color: white;
-}
-
-/***********3 PASOS*******************/
-.main-section-delivery {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-items: center;
-  min-height: 50vh;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  background-color: black;
-  border-radius: 10px;
-  width: 80%;
-  margin: 10px;
-  padding: 10px;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido .paso-1,
-.contenedorMain .main-section-delivery .section-delivery-contenido .paso-2,
-.contenedorMain .main-section-delivery .section-delivery-contenido .paso-3 {
-  padding: 5px 10px 5px 10px;
-  margin: 5px 10px 5px 10px;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido .icono {
-  font-size: 6rem;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido h3 {
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-}
-
-.contenedorMain .main-section-delivery .section-delivery-contenido p {
-  font-size: 1.2rem;
-  text-align: center;
-  font-family: "Mulish", sans-serif;
 }
 
 /**************PAYMENT METHODS**************/
@@ -289,7 +253,7 @@ h2 {
   border-style: solid;
   border-radius: 10px;
   border-color: #0caebf;
-  background-color: transparent;
+  background-color: #1F2A41;
   text-align: center;
   color: white;
   padding: 1% 0%;
@@ -301,11 +265,11 @@ h2 {
 }
 
 .cant:hover {
-  color: #000;
-  background-color: #00FFE7;
+  color: white;
+  background-color: transparent;
   font-weight: 200;
-  transition: background-color 0.8s;
-  border-color: black;
+  transition: background-color 0.1s;
+  border-color: white;
 }
 
 ol,
@@ -330,11 +294,11 @@ ul {
 }
 
 .addToCart:hover {
-  color: #000;
-  background-color: #00FFE7;
+  color: white;
+  background-color: transparent;
   font-weight: 200;
-  transition: background-color 0.8s;
-  border-color: black;
+  transition: background-color 0.1s;
+  border-color: white;
 }
 
 /*DRINKS SECTION*/
@@ -342,6 +306,7 @@ ul {
   text-align: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/winee1.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .wines h2 {
@@ -356,6 +321,7 @@ ul {
   text-align: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/ciro.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .vodka h2 {
@@ -371,6 +337,7 @@ ul {
   text-align: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/ber33.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .beer h2 {
@@ -385,6 +352,7 @@ ul {
   text-align: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/champ22.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .champagne h2 {
@@ -570,7 +538,6 @@ h2 {
   display: block;
 }
 
-/************************************************PRUEBAAAAA*************************************************************/
 .section_cervezas_card {
   background-color: rgba(165, 42, 42, 0.281);
 }
@@ -800,6 +767,12 @@ span.price {
 }
 
 /********************* SIGN IN *******************/
+.background-login {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/space.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .form-signin {
   width: 100%;
   max-width: 30%;
@@ -825,6 +798,10 @@ span.price {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.ft-white {
+  color: white;
 }
 
 /****************************FOOTER****************************/
@@ -1244,8 +1221,8 @@ span.price {
     display: none;
   }
   .top-nav .top-ul .btn-nav {
-    padding: 1rem 0.6rem;
-    margin: 0.4rem 0rem;
+    padding: 0.6rem 2rem;
+    margin: 0.6rem 0rem;
   }
   .card-body {
     flex: 1 1 auto;

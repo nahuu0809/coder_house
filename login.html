@@ -13,36 +13,51 @@
     <meta name="theme-color" content="#7952b3">
 </head>
 
-<body class="text-center">
+<body class="text-center background-login">
     <header class="container-header">
         <div class="pre-nav">
             <h4>Envios gratis en compras superiores a $2000</h4>
         </div>
-        <nav class="top-nav">
-            <ul class="top-ul">
-                <li class="nav-logo"> <a href="index.html"> <img src="img/lemmonlo.png" alt="Logo_Lemmon"
-                            title="Home"></a> </li>
-                <li class="btn-nav"> <a href="products.html">Productos</a>
+        <nav class="top-nav navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+            <div class="container-xl">
+              <a class="navbar-brand" href="index.html">LemmonDrinks</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                <ul class="top-ul navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item btn-nav"> <a class="nav-link" href="products.html">Productos</a>
                     <ul class="sub-ul">
-                        <li> <a href="products.html"> Vodka </a></li>
-                        <li> <a href="products.html"> Champagne </a></li>
-                        <li><a href="products.html"> Cerveza </a> </li>
+                      <li> <a href="products.html"> Vodka </a></li>
+                      <li> <a href="products.html"> Champagne </a></li>
+                      <li><a href="products.html"> Cerveza </a> </li>
                     </ul>
-                </li>
-                <li class="btn-nav"> <a href="about.html">Acerca de Nosotros</a> </li>
-                <li class="btn-nav"> <a href="contact.html">Contacto</a> </li>
-                <li class="btn-nav"> <a href="help.html">Ayuda</a> </li>
-                <li class="btn-nav"> <img src="img/myLogo3.png" alt="account_logo"> <a href="login.html"> Mi Cuenta </a>
-                </li>
-                <li class="nav-logo"> <a href="checkout.html"> <img src="img/cartWhite.png" alt="Cart"> </a> </li>
-            </ul>
-        </nav>
+                  </li>
+                  <li class="nav-item btn-nav">
+                    <a class="nav-link" href="about.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item btn-nav">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                  </li>
+                  <li class="nav-item btn-nav">
+                    <a class="nav-link" href="about.html">Ayuda</a>
+                  </li>
+                  <li class="nav-item btn-nav">
+                    <a class="nav-link" href="login.html"><i class="bi bi-person-circle boot-logo"></i>Mi Cuenta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="checkout.html"><i class="bi bi-cart4 boot-icon" ></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="form-signin">
         <form>
-            <img class="mb-4" src="img/logo/myLogo2.png" alt="login_logo" width="120px" height="120px">
-            <h1 class="h3 mb-3 fw-normal">Mi Cuenta Lemmon</h1>
+            <img class="mb-4" src="img/myLogo2.png" alt="login_logo" width="120px" height="120px">
+            <h1 class="h3 mb-3 fw-normal ft-white">Mi Cuenta Lemmon</h1>
 
             <div class="form-floating">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
@@ -53,13 +68,12 @@
                 <label for="floatingPassword">Contrasena</label>
             </div>
 
-            <div class="checkbox mb-3">
+            <div class="checkbox mb-3 ft-white">
                 <label>
                     <input type="checkbox" value="remember-me"> Recordarme
                 </label>
             </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar Sesion</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
         </form>
     </main>
     <footer class="footer">
