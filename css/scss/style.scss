@@ -79,14 +79,14 @@
 
             &:hover {
                 background: #a64bf4;
-    background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: linear-gradient(45deg, #00dbde, #fc00ff);
-    -webkit-transition: background-color 0.4s;
-    -o-transition: background-color 0.4s;
-    -moz-transition: background-color 0.4s;
-    transition: background-color 0.4s;
+                background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+                background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
+                background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
+                background: linear-gradient(45deg, #00dbde, #fc00ff);
+                -webkit-transition: background-color 0.4s;
+                -o-transition: background-color 0.4s;
+                -moz-transition: background-color 0.4s;
+                transition: background-color 0.4s;
             }
         }
 
@@ -138,43 +138,44 @@
 
 
 /**********HOME***************************************/
-.home{
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/champ22.jpg);
-background-size: cover;
-background-attachment: fixed;
-padding: 20rem 0rem;
+.home {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/champ22.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20rem 0rem;
 
-h1{
-    @include txtcenter;
-    font-size: 5rem;
-}
+    h1 {
+        @include txtcenter;
+        font-size: 5rem;
+    }
 
-p{
-    font-size: 1.6rem;
-    margin: 4rem 0rem;
-}
+    p {
+        font-size: 1.6rem;
+        margin: 4rem 0rem;
+    }
 
-a{
-    @include border(solid, 8px);
+    a {
+        @include border(solid, 8px);
 
-padding: 1rem 1rem;
-@include txtcenter;
-width: 40%;
+        padding: 1rem 1rem;
+        @include txtcenter;
+        width: 40%;
 
-background-color: darkorange;
-color: white;
-&:hover{
-    background: #a64bf4;
-    background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: linear-gradient(45deg, #00dbde, #fc00ff);
-    -webkit-transition: background-color 0.4s;
-    -o-transition: background-color 0.4s;
-    -moz-transition: background-color 0.4s;
-    transition: background-color 0.4s;
-}
-}
+        background-color: darkorange;
+        color: white;
+
+        &:hover {
+            background: #a64bf4;
+            background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+            background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
+            background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
+            background: linear-gradient(45deg, #00dbde, #fc00ff);
+            -webkit-transition: background-color 0.4s;
+            -o-transition: background-color 0.4s;
+            -moz-transition: background-color 0.4s;
+            transition: background-color 0.4s;
+        }
+    }
 
 }
 
@@ -214,7 +215,7 @@ h2 {
 }
 
 /******DRINKS****/
-.drinks{
+.drinks {
     background-color: black;
     color: white;
 }
@@ -302,7 +303,7 @@ ul {
     padding-left: 0rem;
 }
 
-.card-products{
+.card-products {
     @include border(solid, 12px, #0caebf);
     width: 18rem;
     margin: 3rem 2rem;
@@ -317,65 +318,73 @@ ul {
 
     &:hover {
         color: white;
-background-color: transparent;
-font-weight: 200;
-transition: background-color 0.1s;
-border-color: white;
+        background-color: transparent;
+        font-weight: 200;
+        transition: background-color 0.1s;
+        border-color: white;
     }
 }
 
 /*DRINKS SECTION*/
 
-.wines{
+.wines {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/winee1.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/winee1.jpg);
     background-size: cover;
     background-attachment: fixed;
-    h2{
+
+    h2 {
         background-color: deeppink;
-        .h2-img{
+
+        .h2-img {
             width: 5rem;
         }
     }
 }
 
-.vodka{
+.vodka {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/ciro.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/ciro.jpg);
     background-size: cover;
     background-attachment: fixed;
-    h2{
+
+    h2 {
         background-color: #fffffff2;
         color: black;
-        .h2-img{
+
+        .h2-img {
             width: 5rem;
-        } 
+        }
     }
 }
 
-.beer{
+.beer {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/ber33.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/ber33.jpg);
     background-size: cover;
     background-attachment: fixed;
-    h2{
+
+    h2 {
         background-color: #F0B01AED;
-        .h2-img{
+
+        .h2-img {
             width: 5rem;
-        } 
+        }
     }
 }
 
-.champagne{
+.champagne {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/champ22.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/champ22.jpg);
     background-size: cover;
     background-attachment: fixed;
-    h2{
+
+    h2 {
         background-color: #F2C288;
-        .h2-img{
+
+        .h2-img {
             width: 5rem;
-        } 
+        }
     }
 }
 
@@ -406,9 +415,9 @@ h2 {
 }
 
 /**************CONTACT FORM**************/
-.col-75-contact{
+.col-75-contact {
 
-    .col-75-container-contact{
+    .col-75-container-contact {
         background-color: #f2f2f2;
         padding: 2rem 0rem 0rem 3rem;
         border-style: solid;
@@ -417,7 +426,9 @@ h2 {
         border-width: 5px;
         width: 80%;
         margin: 1rem 12rem;
-        input[type="text"],[type="email"]{
+
+        input[type="text"],
+        [type="email"] {
             margin-bottom: 30px;
             padding: 1.2rem 1rem;
             border-style: solid;
@@ -425,9 +436,10 @@ h2 {
             border-color: #ccc;
             border-width: 2px;
             -webkit-appearance: none;
-            width: 90%; 
+            width: 90%;
         }
-        .btn-form-contact{
+
+        .btn-form-contact {
             background-color: white;
             border-style: solid;
             border-radius: 3px;
@@ -436,11 +448,11 @@ h2 {
             padding: 0.5rem 1rem;
             margin: 2rem 13rem;
         }
-} 
+    }
 
 }
 
-.text-area-contact{
+.text-area-contact {
     margin: 0rem 0rem;
     width: 90%;
 }
@@ -457,10 +469,10 @@ h2 {
 
 .email-form-contact {
     @include paddi (2%, 0%);
-        text-align: center;
+    text-align: center;
 
     a {
-        @include border (double, 3px, none ,5px);
+        @include border (double, 3px, none, 5px);
         @include paddi (2px, 25px);
     }
 
@@ -664,7 +676,7 @@ h2 {
     margin: 3rem 8rem;
 
     .container {
-        @include border (solid, 10px, burlywood ,5px);
+        @include border (solid, 10px, burlywood, 5px);
         padding: 2rem 2rem;
     }
 }
@@ -674,6 +686,7 @@ h2 {
     /* IE10 */
     flex: 47%;
     @include paddi(0%, 4%);
+
     .col-75-container {
         background-color: #f2f2f2;
         padding: 2rem 10rem 3rem 2rem;
@@ -718,6 +731,7 @@ label {
     cursor: pointer;
     @include font (17px);
     transition: background-color 0.6s;
+
     &:hover {
         @include backcolor ($LightBlue);
     }
@@ -733,6 +747,7 @@ label {
     transition: background-color 0.6s;
     margin: 0rem 15rem;
     padding: 1rem 20rem 1rem 20rem;
+
     &:hover {
         @include backcolor ($LightBlue);
     }
@@ -747,7 +762,7 @@ span.price {
     @include width (100%);
     @include paddi (8%, 0%);
     background: white;
-    @include border (solid, none ,3px);
+    @include border (solid, none, 3px);
 }
 
 .chk-payments {
@@ -762,7 +777,7 @@ span.price {
     }
 
     li:active {
-        @include border (solid, null ,$DarkGold, 2px);
+        @include border (solid, null, $DarkGold, 2px);
     }
 }
 
@@ -793,8 +808,8 @@ span.price {
 
 /********************* SIGN IN *******************/
 
-.background-login{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)),url(../../img/space.jpg);
+.background-login {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/space.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -826,99 +841,100 @@ span.price {
     }
 }
 
-.ft-white{
+.ft-white {
     color: white
 }
 
 /*------------------------------------------------------------------
 [ Button sign in with ]*/
 
-.sign-in-with{
+.sign-in-with {
     margin: 1rem;
     color: white;
 }
 
 .btn-face,
 .btn-google {
-  font-size: 18px;
-  line-height: 1.2;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  width: calc((100% - 20px) / 2);
-  height: 70px;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-  position: relative;
-  z-index: 1;
+    font-size: 18px;
+    line-height: 1.2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: calc((100% - 20px) / 2);
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    position: relative;
+    z-index: 1;
 }
 
 .btn-google::before,
 .btn-face::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  top: 0;
-  left: 0;
-  background: #a64bf4;
-  background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
-  background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
-  background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-  background: linear-gradient(45deg, #00dbde, #fc00ff);
-  opacity: 0;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+    background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
+    background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .btn-face {
-  color: #fff;
-  background-color: #3b5998;
-  margin: 1.5rem 0rem;
-  img{
-    width: 3.2rem;
-  }
+    color: #fff;
+    background-color: #3b5998;
+    margin: 1.5rem 0rem;
+
+    img {
+        width: 3.2rem;
+    }
 }
 
 
 .btn-google {
-  color: #555555;
-  background-color: #fff;
-  margin: -5.86rem 0rem 0rem 19rem;
+    color: #555555;
+    background-color: #fff;
+    margin: -5.86rem 0rem 0rem 19rem;
 }
 
 .btn-google img {
-  width: 30px;
-  margin-right: 15px;
-  padding-bottom: 3px;
+    width: 30px;
+    margin-right: 15px;
+    padding-bottom: 3px;
 }
 
 .btn-face:hover:before,
 .btn-google:hover:before {
-  opacity: 1;
+    opacity: 1;
 }
 
 .btn-face:hover,
 .btn-google:hover {
-  color: #fff;
+    color: #fff;
 }
 
 
@@ -931,6 +947,7 @@ span.price {
     text-align: left;
     font: normal 16px sans-serif;
     @include paddi (2%, 0%);
+
     .footer-datos {
         p {
             color: $GreyFooterText;
@@ -939,10 +956,12 @@ span.price {
             @include txtcenter;
         }
     }
+
     .footer-redes {
         margin-top: 6px;
         @include width (100%);
         @include txtcenter;
+
         a {
             @include disp-pos (inline-block);
             margin-left: 16px;
@@ -955,6 +974,7 @@ span.price {
             }
         }
     }
+
     .footer-links {
         a:before {
             @include disp-pos (inline-block);
@@ -965,18 +985,21 @@ span.price {
             padding-right: 5px;
         }
     }
+
     p.footer-links {
         @include font (14px, null, bold);
         color: #FFFFFF;
         margin: 10px 0 10px 0;
         @include paddi (0px, 0px);
         transition: ease .25s;
+
         a {
             @include disp-pos (inline-block);
             line-height: 1.8;
             text-decoration: none;
             color: inherit;
             transition: ease .25s;
+
             &:hover {
                 color: $VioletNeon;
             }
@@ -986,6 +1009,7 @@ span.price {
 
 .enlaces_footer {
     color: $Cian;
+
     &:hover {
         color: $VioletNeon;
     }
@@ -1080,7 +1104,7 @@ span.price {
 }
 
 .form_pay {
-    @include disp-pos (flex,0,column);
+    @include disp-pos (flex, 0, column);
     margin: 2rem 25rem;
 
     .container {
@@ -1139,7 +1163,7 @@ span.price {
 /********************************************MEDIA QUERIES**********************************************/
 
 @media (min-width: 1024px) and (max-width: 1920px) {
-   /* .btn-coll-mobile{
+    /* .btn-coll-mobile{
       visibility: hidden;
     }
 
@@ -1360,39 +1384,41 @@ span.price {
 /*** #Device = Most of the Smartphones Mobiles (Portrait) - #Screen = B/w 320px to 479px ***/
 @media (min-width: 320px) and (max-width: 479px) {
 
-/*****INDEX******/
+    /*****INDEX******/
 
-.home{
-    h1{
-        text-align: center;
-        font-size: 3rem;
+    .home {
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 1rem 0rem;
+            text-align: center;
+        }
+
+        a {
+            width: 90%;
+        }
     }
-    p{
-        font-size: 1.1rem;
-        margin: 1rem 0rem;
-        text-align: center;
+
+    .abs-gif {
+        margin: 0rem -8rem;
+        width: 20rem;
     }
-    a{
-        width: 90%;
+
+    .cer-gif-hei {
+        width: 20rem;
+        margin: 1rem -5rem;
     }
-}
 
-.abs-gif{
-    margin: 0rem -8rem;
-    width: 20rem;
-}
+    .cer-gif {
+        width: 12rem;
+        margin: 0rem 0rem;
+    }
 
-.cer-gif-hei{
-    width: 20rem;
-    margin: 1rem -5rem;
-}
-
-.cer-gif{
-    width: 12rem;
-    margin: 0rem 0rem;
-}
-
-.btn-coll-mobile {
+    .btn-coll-mobile {
         @include backcolor ($Green);
         color: $white;
         border: none;
@@ -1402,43 +1428,43 @@ span.price {
         cursor: pointer;
         @include font (17px);
         transition: background-color 0.6s;
-}
+    }
 
-.img-logo-home{ 
-    width: 1.5rem;
-    margin: 0rem 9rem;
-}
+    .img-logo-home {
+        width: 1.5rem;
+        margin: 0rem 9rem;
+    }
 
-.card {
-    background-color: #9595951c;
-}
+    .card {
+        background-color: #9595951c;
+    }
 
-.sub-ul ul{
-    display: none;
+    .sub-ul ul {
+        display: none;
 
-}
+    }
 
-.top-nav .top-ul .btn-nav {
-    padding: 0.6rem 2rem;
-    margin: 0.6rem 0rem;
-}
+    .top-nav .top-ul .btn-nav {
+        padding: 0.6rem 2rem;
+        margin: 0.6rem 0rem;
+    }
 
-.card-body {
-    flex: 1 1 auto;
-    padding: 1rem 0rem;
-    margin-left: -19rem;
-    @include bradius (14px);
-}
+    .card-body {
+        flex: 1 1 auto;
+        padding: 1rem 0rem;
+        margin-left: -19rem;
+        @include bradius (14px);
+    }
 
-.top-nav .top-ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 0%;
-    margin: 2rem 0rem;
-}
+    .top-nav .top-ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 0%;
+        margin: 2rem 0rem;
+    }
 
     .chk-ul-right-nav img {
         width: 2.6rem;
@@ -1516,31 +1542,37 @@ span.price {
     }
 
     /*******************CONTACT**********************************/
-    .col-75-contact{
+    .col-75-contact {
         .col-75-container-contact {
             padding: 2rem 0rem 0rem 1rem;
             width: 90%;
             margin: 0rem 1rem;
-            input[type="text"],[type="email"] {
+
+            input[type="text"],
+            [type="email"] {
                 width: 91%;
+            }
+
+            .btn-form-contact {
+                margin: 0.5rem 4rem;
+            }
+
+            .text-area-contact {
+                margin: 0rem 0.2rem;
+                width: 90%;
+            }
+        }
+
+        .email-form-contact {
+            padding: 1rem 2rem;
+
+            a {
+                @include border(double, 3px, none, 5px);
+                padding: 2px 25px;
+                margin: 0rem 5rem;
+            }
+        }
     }
-    .btn-form-contact {
-        margin: 0.5rem 4rem;
-    }
-    .text-area-contact {
-        margin: 0rem 0.2rem;
-        width: 90%;
-    }
-}
-.email-form-contact {
-    padding: 1rem 2rem;
-    a{
-        @include border(double, 3px, none, 5px);
-        padding: 2px 25px;
-        margin: 0rem 5rem;
-    }
-}
-}
 
     /*******************************LOGIN*****************************/
     .form-floating {
@@ -1554,15 +1586,15 @@ span.price {
         font-size: 1.063rem;
     }
 
-.btn-face{
-    margin: 0rem -2rem;
-    width: unset;
-}
+    .btn-face {
+        margin: 0rem -2rem;
+        width: unset;
+    }
 
-.btn-google{
-    margin: 2rem -2rem 2rem -2rem;
-    width: unset;
-}
+    .btn-google {
+        margin: 2rem -2rem 2rem -2rem;
+        width: unset;
+    }
 
     /**************************************HELP**************************/
 
@@ -1632,6 +1664,7 @@ span.price {
     .col-75-container {
         padding: 2rem 2rem 3rem 2rem !important;
         width: 100%;
+
         .col-75-container-form {
             margin-bottom: 3rem;
         }
@@ -1658,16 +1691,17 @@ span.price {
     .footer-payments {
         text-align: center;
         margin: 1.5rem 1rem;
-        
-    .footer-payments-credit-card {
-        display: inline-block;
-        margin-left: 0.65rem;
-        margin-bottom: 1rem;
+
+        .footer-payments-credit-card {
+            display: inline-block;
+            margin-left: 0.65rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-payments img {
+            width: 1.7rem;
+        }
     }
-    .footer-payments img {
-        width: 1.7rem;
-    }
-}
 
     .footer p.footer-links {
         font-size: 0.85rem;
