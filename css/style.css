@@ -55,8 +55,9 @@ BLUE FOR BORDER BUTTONS ADD TO CART, CANT = #061C91 (DarkLightBlue)
 
 .top-nav li:hover .sub-ul {
   display: block;
-  color: red;
-  background-color: #191D3D;
+  background: #a64bf4;
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  transition: background-color 0.4s;
   border-radius: 6px;
   padding: 0.6rem 0.8rem;
   margin: 0.6rem -0.4rem;
@@ -87,8 +88,9 @@ BLUE FOR BORDER BUTTONS ADD TO CART, CANT = #061C91 (DarkLightBlue)
 }
 
 .top-nav .top-ul .btn-nav:hover {
-  background-color: #eb036bd8;
-  transition: background-color 0.2s;
+  background: #a64bf4;
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  transition: background-color 0.4s;
 }
 
 .top-nav .top-ul .sub-ul {
@@ -98,11 +100,12 @@ BLUE FOR BORDER BUTTONS ADD TO CART, CANT = #061C91 (DarkLightBlue)
 }
 
 .top-nav .top-ul .sub-ul a:hover {
-  background-color: #eb036bd8;
-  color: #0caebf;
-  border-radius: 3px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
   font-weight: bold;
-  transition: background-color 0.2s;
+  transition: background-color 0.4s;
+  padding: 0.1rem 0.3rem;
 }
 
 .chk-ul-left-nav {
@@ -145,6 +148,32 @@ BLUE FOR BORDER BUTTONS ADD TO CART, CANT = #061C91 (DarkLightBlue)
   background-size: cover;
   background-attachment: fixed;
   padding: 20rem 0rem;
+}
+
+.home h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.home p {
+  font-size: 1.6rem;
+  margin: 4rem 0rem;
+}
+
+.home a {
+  border-style: solid;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  text-align: center;
+  width: 40%;
+  background-color: darkorange;
+  color: white;
+}
+
+.home a:hover {
+  background: #a64bf4;
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  transition: background-color 0.4s;
 }
 
 /**************BRANDS**************/
@@ -211,7 +240,7 @@ h2 {
   font-size: 2rem;
   text-align: center;
   padding: 1% 0%;
-  color: white;
+  color: #0ff;
 }
 
 #abt-us h3,
@@ -391,22 +420,71 @@ h2 {
 }
 
 /**************CONTACT FORM**************/
-.form-contact {
+.col-75-contact .col-75-container-contact {
+  background-color: #f2f2f2;
+  padding: 2rem 0rem 0rem 3rem;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: lightgray;
+  border-width: 5px;
+  width: 80%;
+  margin: 1rem 12rem;
+}
+
+.col-75-contact .col-75-container-contact input[type="text"], .col-75-contact .col-75-container-contact [type="email"] {
+  margin-bottom: 30px;
+  padding: 1.2rem 1rem;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #ccc;
+  border-width: 2px;
+  -webkit-appearance: none;
+  width: 90%;
+}
+
+.col-75-contact .col-75-container-contact .btn-form-contact {
+  background-color: white;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: black;
+  border-width: 2px;
+  padding: 0.5rem 1rem;
+  margin: 2rem 13rem;
+}
+
+.text-area-contact {
+  margin: 0rem 0rem;
+  width: 90%;
+}
+
+.buttons-forms-contact {
+  padding: 2% 0%;
+}
+
+.btn-form-contact {
+  background-color: white;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: black;
+  border-width: 2px;
+  padding: 4px 10px;
+}
+
+.email-form-contact {
+  padding: 2% 0%;
   text-align: center;
 }
 
-.form-contact h2 {
-  text-decoration: underline;
+.email-form-contact a {
+  border-style: double;
+  border-radius: 3px;
+  border-color: none;
+  border-width: 5px;
+  padding: 2px 25px;
 }
 
-.form-contact .form-contact-input {
-  padding: 1% 2%;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: #ccc;
-  -webkit-appearance: none;
-  width: 12%;
-  margin: 1% 4%;
+.email-form-contact h3 {
+  padding: 1% 0%;
 }
 
 /************HELP ****/
@@ -571,6 +649,7 @@ h2 {
   flex-wrap: wrap;
   flex-wrap: wrap;
   overflow: hidden;
+  --bs-gutter-x: 0;
 }
 
 .row .col-50 {
@@ -606,7 +685,7 @@ h2 {
   padding: 0% 4%;
 }
 
-.col-75 .col-75__container {
+.col-75 .col-75-container {
   background-color: #f2f2f2;
   padding: 2rem 10rem 3rem 2rem;
   border-style: solid;
@@ -616,7 +695,7 @@ h2 {
   width: 95%;
 }
 
-.col-75 .col-75__container .col-75__container-form {
+.col-75 .col-75-container .col-75-container-form {
   margin-bottom: 3rem;
 }
 
@@ -713,35 +792,6 @@ span.price {
   padding: 2% 0%;
 }
 
-.buttons-forms-contact {
-  padding: 2% 0%;
-}
-
-.btn-form-contact {
-  background-color: white;
-  border-style: solid;
-  border-radius: 3px;
-  border-color: black;
-  border-width: 2px;
-  padding: 4px 10px;
-}
-
-.email-form-contact {
-  padding: 2% 0%;
-}
-
-.email-form-contact a {
-  border-style: double;
-  border-radius: 3px;
-  border-color: none;
-  border-width: 5px;
-  padding: 2px 25px;
-}
-
-.email-form-contact h3 {
-  padding: 1% 0%;
-}
-
 .select-provincia {
   width: 100%;
   padding: 1.2rem 0rem;
@@ -804,6 +854,83 @@ span.price {
   color: white;
 }
 
+/*------------------------------------------------------------------
+[ Button sign in with ]*/
+.sign-in-with {
+  margin: 1rem;
+  color: white;
+}
+
+.btn-face,
+.btn-google {
+  font-size: 18px;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: calc((100% - 20px) / 2);
+  height: 70px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-google::before,
+.btn-face::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  background: #a64bf4;
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.btn-face {
+  color: #fff;
+  background-color: #3b5998;
+  margin: 1.5rem 0rem;
+}
+
+.btn-face img {
+  width: 3.2rem;
+}
+
+.btn-google {
+  color: #555555;
+  background-color: #fff;
+  margin: -5.86rem 0rem 0rem 19rem;
+}
+
+.btn-google img {
+  width: 30px;
+  margin-right: 15px;
+  padding-bottom: 3px;
+}
+
+.btn-face:hover:before,
+.btn-google:hover:before {
+  opacity: 1;
+}
+
+.btn-face:hover,
+.btn-google:hover {
+  color: #fff;
+}
+
 /****************************FOOTER****************************/
 .footer {
   background-color: #191D3D;
@@ -815,32 +942,32 @@ span.price {
   padding: 2% 0%;
 }
 
-.footer .footer__datos p {
+.footer .footer-datos p {
   color: #8F9296;
   font-size: 14px;
   margin: 0;
   text-align: center;
 }
 
-.footer .footer__redes {
+.footer .footer-redes {
   margin-top: 6px;
   width: 100%;
   text-align: center;
 }
 
-.footer .footer__redes a {
+.footer .footer-redes a {
   display: inline-block;
   margin-left: 16px;
   margin-bottom: 10px;
 }
 
-.footer .footer__redes a:hover {
+.footer .footer-redes a:hover {
   background-color: #0caebf;
   padding: 5px 8px;
   border-radius: 20%;
 }
 
-.footer .footer__links a:before {
+.footer .footer-links a:before {
   display: inline-block;
   content: "·";
   font-size: 20px;
@@ -849,7 +976,7 @@ span.price {
   padding-right: 5px;
 }
 
-.footer p.footer__links {
+.footer p.footer-links {
   font-size: 14px;
   font-weight: bold;
   color: #FFFFFF;
@@ -858,7 +985,7 @@ span.price {
   transition: ease .25s;
 }
 
-.footer p.footer__links a {
+.footer p.footer-links a {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
@@ -866,7 +993,7 @@ span.price {
   transition: ease .25s;
 }
 
-.footer p.footer__links a:hover {
+.footer p.footer-links a:hover {
   color: #eb036bd8;
 }
 
@@ -878,20 +1005,20 @@ span.price {
   color: #eb036bd8;
 }
 
-.footer__payments_credit-card {
+.footer-payments-credit-card {
   display: inline-block;
   margin-left: 10px;
 }
 
-.footer__payments_credit-card:hover {
+.footer-payments-credit-card:hover {
   transform: scale(115%);
 }
 
-.footer__payments {
+.footer-payments {
   text-align: right;
 }
 
-.footer__payments ul {
+.footer-payments ul {
   display: flex;
   justify-content: center;
 }
@@ -1125,11 +1252,11 @@ span.price {
     margin: 0.8rem 4rem;
   }
   /*****************FOOTER****************************/
-  .footer__payments_credit-card {
+  .footer-payments-credit-card {
     margin-left: 1rem;
     width: 2rem;
   }
-  .footer p.footer__links {
+  .footer p.footer-links {
     font-size: 0.85rem;
   }
   /********************LOGIN*********************/
@@ -1162,17 +1289,12 @@ span.price {
   .col-25 {
     margin: 2rem 2rem;
   }
-  .col-75__container {
-    border-style: solid;
-    border-radius: 15px;
-    border-color: lightgray;
-    border-width: 5px;
-    background-color: #f2f2f2;
-    padding: 2rem 3rem 3rem 3rem;
-    width: 88%;
+  .col-75-container {
+    padding: 2rem 2rem 3rem 2rem !important;
+    width: 100% !important;
   }
   .btn-fin-pay {
-    margin: 0rem 1.5rem;
+    margin: 0rem 3.7rem;
     padding: 1rem 2rem 1rem 2rem;
   }
 }
@@ -1199,6 +1321,31 @@ span.price {
 
 /*** #Device = Most of the Smartphones Mobiles (Portrait) - #Screen = B/w 320px to 479px ***/
 @media (min-width: 320px) and (max-width: 479px) {
+  /*****INDEX******/
+  .home h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .home p {
+    font-size: 1.1rem;
+    margin: 1rem 0rem;
+    text-align: center;
+  }
+  .home a {
+    width: 90%;
+  }
+  .abs-gif {
+    margin: 0rem -8rem;
+    width: 20rem;
+  }
+  .cer-gif-hei {
+    width: 20rem;
+    margin: 1rem -5rem;
+  }
+  .cer-gif {
+    width: 12rem;
+    margin: 0rem 0rem;
+  }
   .btn-coll-mobile {
     background-color: #08DB33;
     color: white;
@@ -1301,36 +1448,49 @@ span.price {
     border-radius: 14px;
   }
   /*******************CONTACT**********************************/
-  .form-contact .form-contact-input {
-    padding: 0.6rem 1rem;
-    width: 50%;
-    margin: 0.6rem 2rem;
+  .col-75-contact .col-75-container-contact {
+    padding: 2rem 0rem 0rem 1rem;
+    width: 90%;
+    margin: 0rem 1rem;
   }
-  .form-contact .checkbox-form-contact {
-    font-size: 1.1rem;
+  .col-75-contact .col-75-container-contact input[type="text"], .col-75-contact .col-75-container-contact [type="email"] {
+    width: 91%;
   }
-  .form-contact textarea {
-    resize: vertical;
-    overflow: hidden;
-    margin: 1rem 0rem;
-    width: 22rem;
-    text-align: center;
+  .col-75-contact .col-75-container-contact .btn-form-contact {
+    margin: 0.5rem 4rem;
   }
-  .form-contact .email-form-contact {
-    padding: 2rem 0rem;
+  .col-75-contact .col-75-container-contact .text-area-contact {
+    margin: 0rem 0.2rem;
+    width: 90%;
   }
-  .form-contact .email-form-contact h3 {
-    margin: 3rem 1rem;
+  .col-75-contact .email-form-contact {
+    padding: 1rem 2rem;
+  }
+  .col-75-contact .email-form-contact a {
+    border-style: double;
+    border-radius: 3px;
+    border-color: none;
+    border-width: 5px;
+    padding: 2px 25px;
+    margin: 0rem 5rem;
   }
   /*******************************LOGIN*****************************/
   .form-floating {
     position: relative;
-    padding: 10% 0%;
-    width: 100%;
+    width: 14rem;
+    margin: 0rem -3.4rem;
   }
   .btn {
     padding: 0.7rem 0rem;
     font-size: 1.063rem;
+  }
+  .btn-face {
+    margin: 0rem -2rem;
+    width: unset;
+  }
+  .btn-google {
+    margin: 2rem -2rem 2rem -2rem;
+    width: unset;
   }
   /**************************************HELP**************************/
   .sec-help-g-map {
@@ -1382,9 +1542,12 @@ span.price {
   .chk-left-nav {
     margin: 3rem 3rem;
   }
-  .col-75__container {
-    padding: 2rem 2rem 4rem 2rem;
+  .col-75-container {
+    padding: 2rem 2rem 3rem 2rem !important;
     width: 100%;
+  }
+  .col-75-container .col-75-container-form {
+    margin-bottom: 3rem;
   }
   .btn-fin-pay {
     margin: 0rem 2rem;
@@ -1393,29 +1556,26 @@ span.price {
   .col-25 {
     margin: 2rem 0rem;
   }
-  .col-75__container-form {
-    margin-bottom: 3rem;
-  }
   /*********************************FOOTER *****************/
-  .footer .footer__redes {
+  .footer .footer-redes {
     margin-top: 1rem;
   }
   .boot-icon {
     font-size: 2.3rem;
   }
-  .footer__payments {
+  .footer-payments {
     text-align: center;
     margin: 1.5rem 1rem;
   }
-  .footer__payments .footer__payments_credit-card {
+  .footer-payments .footer-payments-credit-card {
     display: inline-block;
     margin-left: 0.65rem;
     margin-bottom: 1rem;
   }
-  .footer__payments .footer__payments img {
+  .footer-payments .footer-payments img {
     width: 1.7rem;
   }
-  .footer p.footer__links {
+  .footer p.footer-links {
     font-size: 0.85rem;
   }
   p {

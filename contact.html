@@ -10,9 +10,9 @@
     Patagonia, Amstel, Skyy, Amigos, Noche, Fiesta" />
     <title>Contacto - LemmonDrinks</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
                     <a class="nav-link" href="contact.html">Contacto</a>
                   </li>
                   <li class="nav-item btn-nav">
-                    <a class="nav-link" href="about.html">Ayuda</a>
+                    <a class="nav-link" href="help.html">Ayuda</a>
                   </li>
                   <li class="nav-item btn-nav">
                     <a class="nav-link" href="login.html"><i class="bi bi-person-circle boot-logo"></i>Mi Cuenta</a>
@@ -55,95 +55,78 @@
             </div>
           </nav>
     </header>
-    <form class="form-contact">
-        <fieldset>
-            <h2>Tenes alguna pregunta para nosotros? Encontrala en nuestra seccion de <a href="help.html">Ayuda</a>
-            </h2>
-            <h3>No lograste encontrar lo que buscabas? Llena el siguiente formulario y te vamos a contactar lo antes
-                posible</h3>
-            <div class="form-contact-div">
-                <label for="name">Nombre</label>
-                <input class="form-contact-input" type="text" name="name" placeholder="Tu nombre" required>
-            </div>
-            <div class="form-contact-div">
-                <label for="last-name">Apellido</label>
-                <input class="form-contact-input" type="text" name="last-name" placeholder="Tu apellido" required>
-            </div>
-            <div class="form-contact-div">
-                <label for="email-address">E-mail</label>
-                <input class="form-contact-input" type="email" name="email-address" placeholder="Tu direccion e-mail"
-                    required>
-            </div>
-            <div class="form-contact-div">
-                <label for="phone">Telefono</label>
-                <input class="form-contact-input" type="text" name="phone" placeholder="Tu Telefono" size="20"
-                    maxlength="18" minlength="10" required>
-            </div>
-            <div class="checkbox-form-contact">
-                <h4>Su consulta tiene que ver con alguno de los siguientes temas?</h4>
-                <label for="chk1">Productos</label>
-                <input type="checkbox" name="chk1">
-                <label for="chk2">Envios</label>
-                <input type="checkbox" name="chk2">
-                <label for="chk3">Medios de Pago</label>
-                <input type="checkbox" name="chk3">
-                <label for="chk4">Envios</label>
-                <input type="checkbox" name="chk4">
-                <label for="chk5">Stock</label>
-                <input type="checkbox" name="chk5">
-            </div>
-            <div>
-                <textarea name="text-area" rows="6" cols="60" placeholder="Escribe con detalles tus consultas"
+      <div class="row row-chk">
+        <div class="col-75-contact">
+            <div class="col-75-container-contact">
+                <form class="col-75-container-form">
+                    <div class="row row-nwrp">
+                        <div class="col-50">
+                            <h3>Formulario de Contacto - LemmonDrinks</h3>
+                            <label for="fname"><i class="fa fa-user"></i>Nombre</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Homero"
+                                maxlength="60" required>
+                            <label for="fname"><i class="fa fa-user"></i>Apellido</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Simpson"
+                                maxlength="60" required>
+                            <label for="email"><i class="fa fa-envelope"></i> E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="homer@springfield.com"
+                                maxlength="100" required>
+                            <label for="adr"><i class="fa fa-address-card-o"></i>Domicilio</label>
+                            <input type="text" id="adr" name="address" placeholder="Av. SiempreViva 742" maxlength="50">
+                        </div>
+                    </div>
+                    <textarea name="text-area" class="text-area-contact" rows="6" cols="60" placeholder="Escribe con detalles tus consultas"
                     maxlength="3000" required></textarea>
-            </div>
             <div class="buttons-form-contact">
                 <input class="btn-form-contact" type="submit" name="submit-form" value="Enviar Formulario">
                 <input class="btn-form-contact" type="reset" name="reset-form" value="Vaciar Formulario">
             </div>
+          </form>
+        </div>
             <div class="email-form-contact">
                 <h3>No pudiste llenar nuestro formulario? Hace click en el boton de abajo para enviarnos un e-mail.</h3>
                 <a href="mailto:lemmondrinks@yopmail.com">Enviar e-mail</a>
             </div>
-        </fieldset>
-    </form>
-    <footer class="footer">
-        <div class="footer__redes">
-            <a href="#"><i class="bi bi-facebook boot-icon"></i></a>
-            <a href="#"><i class="bi bi-twitter boot-icon"></i></a>
-            <a href="#"><i class="bi bi-telegram boot-icon"></i></a>
+            </div>
         </div>
-        <div class="footer__payments">
-            <ul>
-                <li class="footer__payments_credit-card"> <img src="img/pay/visa.png" alt="Visa" title="Visa"> </li>
-                <li class="footer__payments_credit-card"> <img src="img/pay/amex.png" alt="AMEX"
-                        title="American Express"> </li>
-                <li class="footer__payments_credit-card"> <img src="img/pay/master.png" alt="MasterCard"
-                        title="MasterCard"> </li>
-                <li class="footer__payments_credit-card"> <img src="img/pay/eth.png" alt="Ethereum" title="Ethereum">
-                </li>
-                <li class="footer__payments_credit-card"> <img src="img/pay/ltc.png" alt="Litecoin" title="Litecoin">
-                </li>
-                <li class="footer__payments_credit-card"> <img src="img/pay/apay.png" alt="Apple Pay" title="Apple Pay">
-                </li>
-                <li class="footer__payments_credit-card"> <img src="img/pay/gpay.png" alt="Google Pay" title="G Pay">
-                </li>
-                <li class="footer__payments_credit-card"> <img src="img/pay/bitpay.png" alt="BitPay" title="BitPay">
-                </li>
-            </ul>
-        </div>
-        <div class="footer__datos">
-            <p class="footer__links">
-                <a href="index.html">Home</a>
-                <a href="about.html">Acerca de Nosotros</a>
-                <a href="products.html">Productos</a>
-                <a href="contact.html">Contacto</a>
-                <a href="help.html">Ayuda</a>
-            </p>
-            <p>&copy; LemmonDrinks 2021</p>
-            <p>Diseñado por <a href="https://www.linkedin.com/in/nahueldiaz" class="enlaces_footer"><i
-                        class="bi bi-linkedin"></i> Nahuel Diaz</a></p>
-        </div>
-    </footer>
+        <footer class="footer">
+          <div class="footer-redes">
+              <a href="#"><i class="bi bi-facebook boot-icon"></i></a>
+              <a href="#"><i class="bi bi-twitter boot-icon"></i></a>
+              <a href="#"><i class="bi bi-telegram boot-icon"></i></a>
+          </div>
+          <div class="footer-payments">
+              <ul>
+                  <li class="footer-payments-credit-card"> <img src="img/pay/visa.png" alt="Visa" title="Visa"> </li>
+                  <li class="footer-payments-credit-card"> <img src="img/pay/amex.png" alt="AMEX"
+                          title="American Express"> </li>
+                  <li class="footer-payments-credit-card"> <img src="img/pay/master.png" alt="MasterCard"
+                          title="MasterCard"> </li>
+                  <li class="footer-payments-credit-card"> <img src="img/pay/eth.png" alt="Ethereum" title="Ethereum">
+                  </li>
+                  <li class="footer-payments-credit-card"> <img src="img/pay/ltc.png" alt="Litecoin" title="Litecoin">
+                  </li>
+                  <li class="footer-payments-credit-card"> <img src="img/pay/apay.png" alt="Apple Pay" title="Apple Pay">
+                  </li>
+                  <li class="footer-payments-credit-card"> <img src="img/pay/gpay.png" alt="Google Pay" title="G Pay">
+                  </li>
+                  <li class="footer-payments-credit-card"> <img src="img/pay/bitpay.png" alt="BitPay" title="BitPay">
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-datos">
+              <p class="footer-links">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">Acerca de Nosotros</a>
+                  <a href="products.html">Productos</a>
+                  <a href="contact.html">Contacto</a>
+                  <a href="help.html">Ayuda</a>
+              </p>
+              <p>&copy; LemmonDrinks 2021</p>
+              <p>Diseñado por <a href="https://www.linkedin.com/in/nahueldiaz" class="enlaces_footer"><i
+                          class="bi bi-linkedin"></i> Nahuel Diaz</a></p>
+          </div>
+      </footer>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </body>
 
