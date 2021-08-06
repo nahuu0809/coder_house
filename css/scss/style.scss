@@ -242,39 +242,49 @@ h2 {
         color: #0ff;
     }
 
-    h3,
-    h4 {
+    h3,h4 {
         @include font (1.3rem, center);
         color: $white;
     }
-}
 
-.abt-us-head{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/warehouse.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 8rem 0rem;
-}
-
-#abt-map {
-    @include paddi (1%, 0%);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/world1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-
-    .g_map {
-        @include border (double, 40px);
-        @include paddi (1%, 1%);
-        @include width (90%);
-        margin-left: 5%;
+    .abt-us-head{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/warehouse.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 8rem 0rem;
     }
-}
 
-.abt-new{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/interview.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 14rem 1rem;
+    #abt-map {
+        @include paddi (1%, 0%);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/world1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    
+        .g_map {
+            @include border (double, 40px);
+            @include paddi (1%, 1%);
+            @include width (90%);
+            margin-left: 5%;
+        }
+    }
+    
+    .abt-new{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/interview.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 14rem 1rem;
+
+        a{
+            color: $Cian !important;
+            font-weight: bold;
+            font-style: italic;
+            :hover{
+                color: $Green;
+            }
+        }
+
+    }
+
 }
 
 /**************PRODUCTS**************/
@@ -287,13 +297,11 @@ h2 {
 
 }
 
-.ul-vka,
-.ul-cer {
+.ul-vka,.ul-cer {
     @include txtcenter;
 }
 
-.cant,
-.addToCart {
+.cant,.addToCart {
     @include border (solid, 10px, $Cian);
     @include backcolor ($GreyBlue);
     @include txtcenter;
@@ -412,8 +420,7 @@ ul {
     @include width (100%);
 }
 
-.vodka-cotainer,
-h2 {
+.vodka-cotainer,h2 {
     @include txtcenter;
     padding: 2rem 0rem;
 }
@@ -443,8 +450,7 @@ h2 {
         width: 80%;
         margin: 1rem 12rem;
 
-        input[type="text"],
-        [type="email"] {
+        input[type="text"],[type="email"] {
             margin-bottom: 30px;
             padding: 1.2rem 1rem;
             border-style: solid;
@@ -499,81 +505,74 @@ h2 {
 
 /************HELP ****/
 
-.sec-help-head{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/envio.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+#abt-us{
+    .sec-help-head{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/envio.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+        .sec-help-g-map {
+            @include border (solid, 40px);
+            @include paddi (1%, 0%);
+            @include width (30%);
+            margin: 1% 1%;
+        }
+    }
 }
 
 .sec-help-head-pay{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.335)), url(../../img/pay2.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.335)), url(../img/pay2.webp);
     background-size: cover;
     background-attachment: fixed;
     color: white;
+
+    .credit-card {
+        h2 {
+            @include font (2rem, center);
+            @include paddi (1%, 0%);
+        }
+    
+        h3,h4 {
+            @include font (1.3rem, center);
+        }
+    
+        h4 {
+            @include paddi (1%, 0%);
+        }
+    
+        .credit-card-logo-img {
+            @include width (9rem);
+            @include paddi (1rem, 1rem);
+        }
+    }
+    
+        .crypto-coins-logo-img {
+            @include width (11rem);
+            @include paddi (2rem, 2rem);
+        }
+    
+        .debit-card-logo-img {
+            @include width (14rem);
+        }
+    
+        .efecti {
+            h4 {
+                @include paddi (1rem, 1rem);
+            }
+            .efecti-logo-img {
+                @include width (14rem);
+            }
+        }
+    
+        .virtual-wallet-head {
+        @include paddi (1rem, 0rem);
+        }
+
+        .virtual-wallet-logo-img {
+            @include width (14rem);
+        }
+
 }
-
-.sec-help-g-map {
-    @include border (solid, 40px);
-    @include paddi (1%, 0%);
-    @include width (30%);
-    margin: 1% 1%;
-}
-
-.credit-card {
-    h2 {
-        @include font (2rem, center);
-        @include paddi (1%, 0%);
-
-    }
-
-    h3 {
-        @include font (1.3rem, center);
-    }
-
-    h4 {
-        @include font (1.3rem, center);
-        @include paddi (1%, 0%);
-    }
-
-    .credit-card-logo-img {
-        @include width (10%);
-        @include paddi (2%, 2%);
-    }
-}
-
-.crypto-coins {
-    .crypto-coins-logo-img {
-        @include width (10%);
-        @include paddi (2%, 2%);
-    }
-}
-
-.debit-card {
-    .debit-card-logo-img {
-        @include width (10%);
-    }
-}
-
-.efecti {
-    h4 {
-        @include paddi (1%, 0%);
-    }
-
-    .efecti-logo-img {
-        @include width (10%);
-    }
-}
-
-.virtual-wallet-head {
-    @include paddi (1%, 0%);
-}
-
-.virtual-wallet-logo {
-    .virtual-wallet-logo-img {
-        @include width (10%);
-    }
-}
-
 /********************************************GRID**********************************************/
 .gridgaleria {
     display: grid;
@@ -1252,8 +1251,13 @@ span.price {
             font-size: 1.2rem;
             margin: 1rem 3rem;
         }
-        .sec-help-g-map {
-            width: 45rem;
+
+        .sec-help-head{
+            .sec-help-g-map {
+                padding: 1rem 1rem;
+                width: 40rem;
+                margin: 1.5rem 4rem;        
+            }
         }
     }
 
@@ -1298,15 +1302,22 @@ span.price {
 
     /****************CONTACT**************/
 
-    .form-contact {
-        h2 {
-            font-size: 1.5rem;
-        }
+    .row-chk{
+        margin: 4rem 3rem;
 
-        h3 {
-            font-size: 1.25rem;
-        }
+        .col-75-contact{
 
+            .col-75-container-contact {
+                background-color: #f2f2f2;
+                padding: 2rem 0rem 0rem 3rem;
+                border-style: solid;
+                border-radius: 10px;
+                border-color: lightgray;
+                border-width: 5px;
+                width: 98%;
+                margin: 1rem 0rem;
+            }
+            
         .email-form-contact {
             margin: 3rem 0rem;
 
@@ -1316,12 +1327,8 @@ span.price {
             }
         }
 
-        .form-contact-input {
-            width: 40%;
-            margin: 0.8rem 4rem;
         }
     }
-
     /*****************FOOTER****************************/
 
     .footer-payments-credit-card {
@@ -1704,11 +1711,18 @@ span.price {
         }
         #abt-map{
             padding: 2rem 0rem;
+
             .g_map {
-                width: 80%;
+                width: 21rem;
             }
         }
     }
+
+
+
+
+
+
 
     .ul__container-div {
         width: 12rem;
@@ -1785,7 +1799,7 @@ span.price {
     }
 
     .btn {
-        padding: 0.7rem 0rem;
+        padding: 1rem 0.4rem;
         font-size: 1.063rem;
     }
 
@@ -1801,9 +1815,14 @@ span.price {
 
     /**************************************HELP**************************/
 
-    .sec-help-g-map {
-        width: 17rem;
-        margin: 1rem 0rem;
+    #abt-us {
+        .sec-help-head{
+            .sec-help-g-map {
+                padding: 0rem 0rem;
+                width: 18rem;
+                margin: 1rem 2.5rem;        
+            }
+        }
     }
 
     .sec-help-head-pay{
@@ -1854,7 +1873,7 @@ span.price {
     .card-wrapper {
         max-width: 13rem;
         width: 100%;
-        margin: 0rem 4.5rem !important;
+        margin: 0rem 3rem !important;
         overflow-x: hidden;
         overflow: hidden;
     }
@@ -1868,46 +1887,50 @@ span.price {
     }
 
     /**************************CHECKOUT*****************************/
-
-    .row-chk {
-        margin: 3rem 0rem;
-    }
-
     .chk-ul-right-nav {
         margin: 2.7rem 2rem;
         padding-left: 0px;
     }
 
     .chk-left-nav {
-        margin: 3rem 3rem;
+        margin: 3rem 2rem;
     }
 
-    .col-75-container {
-        padding: 2rem 2rem 3rem 2rem !important;
-        width: 100%;
+    .row-chk {
+        margin: 3rem 0rem;
 
-        .col-75-container-form {
-            margin-bottom: 3rem;
+        .col-75-container {
+            padding: 2rem 1rem 3rem 1rem !important;
+            width: 18rem;
+    
+            .col-75-container-form {
+                margin-bottom: 3rem;
+            }
+    
+            .btn-fin-pay {
+                margin: 0rem 2rem;
+                padding: 1rem 1rem 1rem 1rem;
+            }
         }
-    }
 
-    .btn-fin-pay {
-        margin: 0rem 2rem;
-        padding: 1rem 2rem 1rem 2rem;
-    }
-
-    .col-25 {
-        margin: 2rem 0rem;
+        .col-25 {
+            margin: 2rem 1.5rem;
+        }
     }
 
     /*********************************FOOTER *****************/
     .footer{
         .footer-redes {
-            margin-top: 1rem;
+            margin-top: 2rem;
+            
+            a{
+                margin: 1rem 1rem 1rem 1rem;
             }
+
+        }
         .footer-payments {
             text-align: center;
-            margin: 0rem 0rem;
+            margin: 0rem 1.5rem;
             width: 20rem;
         .footer-payments-credit-card {
             display: inline-block;

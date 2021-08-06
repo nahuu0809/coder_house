@@ -242,28 +242,27 @@ h2 {
   color: #0ff;
 }
 
-#abt-us h3,
-#abt-us h4 {
+#abt-us h3, #abt-us h4 {
   font-size: 1.3rem;
   text-align: center;
   color: white;
 }
 
-.abt-us-head {
+#abt-us .abt-us-head {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/warehouse.jpg);
   background-size: cover;
   background-attachment: fixed;
   padding: 8rem 0rem;
 }
 
-#abt-map {
+#abt-us #abt-map {
   padding: 1% 0%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/world1.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
-#abt-map .g_map {
+#abt-us #abt-map .g_map {
   border-style: double;
   border-radius: 40px;
   padding: 1% 1%;
@@ -271,11 +270,21 @@ h2 {
   margin-left: 5%;
 }
 
-.abt-new {
+#abt-us .abt-new {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/interview.jpg);
   background-size: cover;
   background-attachment: fixed;
   padding: 14rem 1rem;
+}
+
+#abt-us .abt-new a {
+  color: #0caebf !important;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#abt-us .abt-new a :hover {
+  color: #08DB33;
 }
 
 /**************PRODUCTS**************/
@@ -288,13 +297,11 @@ h2 {
   background-color: #04393999;
 }
 
-.ul-vka,
-.ul-cer {
+.ul-vka, .ul-cer {
   text-align: center;
 }
 
-.cant,
-.addToCart {
+.cant, .addToCart {
   border-style: solid;
   border-radius: 10px;
   border-color: #0caebf;
@@ -416,8 +423,7 @@ ul {
   width: 100%;
 }
 
-.vodka-cotainer,
-h2 {
+.vodka-cotainer, h2 {
   text-align: center;
   padding: 2rem 0rem;
 }
@@ -447,8 +453,7 @@ h2 {
   margin: 1rem 12rem;
 }
 
-.col-75-contact .col-75-container-contact input[type="text"],
-.col-75-contact .col-75-container-contact [type="email"] {
+.col-75-contact .col-75-container-contact input[type="text"], .col-75-contact .col-75-container-contact [type="email"] {
   margin-bottom: 30px;
   padding: 1.2rem 1rem;
   border-style: solid;
@@ -505,20 +510,13 @@ h2 {
 }
 
 /************HELP ****/
-.sec-help-head {
+#abt-us .sec-help-head {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/envio.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
-.sec-help-head-pay {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.335)), url(../../img/pay2.png);
-  background-size: cover;
-  background-attachment: fixed;
-  color: white;
-}
-
-.sec-help-g-map {
+#abt-us .sec-help-head .sec-help-g-map {
   border-style: solid;
   border-radius: 40px;
   padding: 1% 0%;
@@ -526,51 +524,56 @@ h2 {
   margin: 1% 1%;
 }
 
-.credit-card h2 {
+.sec-help-head-pay {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.335)), url(../img/pay2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.sec-help-head-pay .credit-card h2 {
   font-size: 2rem;
   text-align: center;
   padding: 1% 0%;
 }
 
-.credit-card h3 {
+.sec-help-head-pay .credit-card h3, .sec-help-head-pay .credit-card h4 {
   font-size: 1.3rem;
   text-align: center;
 }
 
-.credit-card h4 {
-  font-size: 1.3rem;
-  text-align: center;
+.sec-help-head-pay .credit-card h4 {
   padding: 1% 0%;
 }
 
-.credit-card .credit-card-logo-img {
-  width: 10%;
-  padding: 2% 2%;
+.sec-help-head-pay .credit-card .credit-card-logo-img {
+  width: 9rem;
+  padding: 1rem 1rem;
 }
 
-.crypto-coins .crypto-coins-logo-img {
-  width: 10%;
-  padding: 2% 2%;
+.sec-help-head-pay .crypto-coins-logo-img {
+  width: 11rem;
+  padding: 2rem 2rem;
 }
 
-.debit-card .debit-card-logo-img {
-  width: 10%;
+.sec-help-head-pay .debit-card-logo-img {
+  width: 14rem;
 }
 
-.efecti h4 {
-  padding: 1% 0%;
+.sec-help-head-pay .efecti h4 {
+  padding: 1rem 1rem;
 }
 
-.efecti .efecti-logo-img {
-  width: 10%;
+.sec-help-head-pay .efecti .efecti-logo-img {
+  width: 14rem;
 }
 
-.virtual-wallet-head {
-  padding: 1% 0%;
+.sec-help-head-pay .virtual-wallet-head {
+  padding: 1rem 0rem;
 }
 
-.virtual-wallet-logo .virtual-wallet-logo-img {
-  width: 10%;
+.sec-help-head-pay .virtual-wallet-logo-img {
+  width: 14rem;
 }
 
 /********************************************GRID**********************************************/
@@ -1235,8 +1238,10 @@ span.price {
     font-size: 1.2rem;
     margin: 1rem 3rem;
   }
-  #abt-us .sec-help-g-map {
-    width: 45rem;
+  #abt-us .sec-help-head .sec-help-g-map {
+    padding: 1rem 1rem;
+    width: 40rem;
+    margin: 1.5rem 4rem;
   }
   #abt-map .g_map {
     width: 46rem;
@@ -1264,24 +1269,27 @@ span.price {
     padding-left: 0rem;
   }
   /****************CONTACT**************/
-  .form-contact h2 {
-    font-size: 1.5rem;
+  .row-chk {
+    margin: 4rem 3rem;
   }
-  .form-contact h3 {
-    font-size: 1.25rem;
+  .row-chk .col-75-contact .col-75-container-contact {
+    background-color: #f2f2f2;
+    padding: 2rem 0rem 0rem 3rem;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightgray;
+    border-width: 5px;
+    width: 98%;
+    margin: 1rem 0rem;
   }
-  .form-contact .email-form-contact {
+  .row-chk .col-75-contact .email-form-contact {
     margin: 3rem 0rem;
   }
-  .form-contact .email-form-contact a {
+  .row-chk .col-75-contact .email-form-contact a {
     border-style: double;
     border-radius: 6px;
     border-width: 4px;
     padding: 0.8rem 5rem;
-  }
-  .form-contact .form-contact-input {
-    width: 40%;
-    margin: 0.8rem 4rem;
   }
   /*****************FOOTER****************************/
   .footer-payments-credit-card {
@@ -1572,7 +1580,7 @@ span.price {
     padding: 2rem 0rem;
   }
   #abt-us #abt-map .g_map {
-    width: 80%;
+    width: 21rem;
   }
   .ul__container-div {
     width: 12rem;
@@ -1636,7 +1644,7 @@ span.price {
     margin: 0rem -3.4rem;
   }
   .btn {
-    padding: 0.7rem 0rem;
+    padding: 1rem 0.4rem;
     font-size: 1.063rem;
   }
   .btn-face {
@@ -1648,9 +1656,10 @@ span.price {
     width: unset;
   }
   /**************************************HELP**************************/
-  .sec-help-g-map {
-    width: 17rem;
-    margin: 1rem 0rem;
+  #abt-us .sec-help-head .sec-help-g-map {
+    padding: 0rem 0rem;
+    width: 18rem;
+    margin: 1rem 2.5rem;
   }
   .sec-help-head-pay .credit-card h2 {
     padding: 1rem 0rem;
@@ -1688,7 +1697,7 @@ span.price {
   .card-wrapper {
     max-width: 13rem;
     width: 100%;
-    margin: 0rem 4.5rem !important;
+    margin: 0rem 3rem !important;
     overflow-x: hidden;
     overflow: hidden;
   }
@@ -1699,37 +1708,40 @@ span.price {
     padding: 0rem 0rem;
   }
   /**************************CHECKOUT*****************************/
-  .row-chk {
-    margin: 3rem 0rem;
-  }
   .chk-ul-right-nav {
     margin: 2.7rem 2rem;
     padding-left: 0px;
   }
   .chk-left-nav {
-    margin: 3rem 3rem;
+    margin: 3rem 2rem;
   }
-  .col-75-container {
-    padding: 2rem 2rem 3rem 2rem !important;
-    width: 100%;
+  .row-chk {
+    margin: 3rem 0rem;
   }
-  .col-75-container .col-75-container-form {
+  .row-chk .col-75-container {
+    padding: 2rem 1rem 3rem 1rem !important;
+    width: 18rem;
+  }
+  .row-chk .col-75-container .col-75-container-form {
     margin-bottom: 3rem;
   }
-  .btn-fin-pay {
+  .row-chk .col-75-container .btn-fin-pay {
     margin: 0rem 2rem;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
-  .col-25 {
-    margin: 2rem 0rem;
+  .row-chk .col-25 {
+    margin: 2rem 1.5rem;
   }
   /*********************************FOOTER *****************/
   .footer .footer-redes {
-    margin-top: 1rem;
+    margin-top: 2rem;
+  }
+  .footer .footer-redes a {
+    margin: 1rem 1rem 1rem 1rem;
   }
   .footer .footer-payments {
     text-align: center;
-    margin: 0rem 0rem;
+    margin: 0rem 1.5rem;
     width: 20rem;
   }
   .footer .footer-payments .footer-payments-credit-card {
