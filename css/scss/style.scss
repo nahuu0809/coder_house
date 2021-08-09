@@ -139,7 +139,7 @@
 
 /**********HOME***************************************/
 .home {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/champ22.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/champ22.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 20rem 0rem;
@@ -248,7 +248,7 @@ h2 {
     }
 
     .abt-us-head{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/warehouse.jpg);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/warehouse.jpg);
         background-size: cover;
         background-attachment: fixed;
         padding: 8rem 0rem;
@@ -256,7 +256,7 @@ h2 {
 
     #abt-map {
         @include paddi (1%, 0%);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/world1.jpg);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/world1.jpg);
         background-size: cover;
         background-attachment: fixed;
     
@@ -269,7 +269,7 @@ h2 {
     }
     
     .abt-new{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/interview.jpg);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/interview.jpg);
         background-size: cover;
         background-attachment: fixed;
         padding: 14rem 1rem;
@@ -353,7 +353,7 @@ ul {
 
 .wines {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/winee1.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/winee1.jpg);
     background-size: cover;
     background-attachment: fixed;
 
@@ -368,7 +368,7 @@ ul {
 
 .vodka {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/ciro.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/ciro.jpg);
     background-size: cover;
     background-attachment: fixed;
 
@@ -384,7 +384,7 @@ ul {
 
 .beer {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/ber33.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/ber33.jpg);
     background-size: cover;
     background-attachment: fixed;
 
@@ -399,7 +399,7 @@ ul {
 
 .champagne {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/champ22.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/champ22.jpg);
     background-size: cover;
     background-attachment: fixed;
 
@@ -508,7 +508,7 @@ ul {
 
 #abt-us{
     .sec-help-head{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/envio.jpg);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/envio.jpg);
         background-size: cover;
         background-attachment: fixed;
 
@@ -838,7 +838,7 @@ span.price {
 /********************* SIGN IN *******************/
 
 .background-login {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/space.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/space.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -1718,12 +1718,6 @@ span.price {
             }
         }
     }
-
-
-
-
-
-
 
     .ul__container-div {
         width: 12rem;

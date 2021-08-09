@@ -125,7 +125,7 @@ BLUE FOR BORDER BUTTONS ADD TO CART, CANT = #061C91 (DarkLightBlue)
 
 /**********HOME***************************************/
 .home {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/champ22.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/champ22.jpg);
   background-size: cover;
   background-attachment: fixed;
   padding: 20rem 0rem; }
@@ -209,13 +209,13 @@ h2 {
     text-align: center;
     color: white; }
   #abt-us .abt-us-head {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/warehouse.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/warehouse.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 8rem 0rem; }
   #abt-us #abt-map {
     padding: 1% 0%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/world1.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/world1.jpg);
     background-size: cover;
     background-attachment: fixed; }
     #abt-us #abt-map .g_map {
@@ -225,7 +225,7 @@ h2 {
       width: 90%;
       margin-left: 5%; }
   #abt-us .abt-new {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/interview.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/interview.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 14rem 1rem; }
@@ -294,7 +294,7 @@ ul {
 /*DRINKS SECTION*/
 .wines {
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/winee1.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/winee1.jpg);
   background-size: cover;
   background-attachment: fixed; }
   .wines h2 {
@@ -304,7 +304,7 @@ ul {
 
 .vodka {
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/ciro.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/ciro.jpg);
   background-size: cover;
   background-attachment: fixed; }
   .vodka h2 {
@@ -315,7 +315,7 @@ ul {
 
 .beer {
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/ber33.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/ber33.jpg);
   background-size: cover;
   background-attachment: fixed; }
   .beer h2 {
@@ -325,7 +325,7 @@ ul {
 
 .champagne {
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/champ22.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/champ22.jpg);
   background-size: cover;
   background-attachment: fixed; }
   .champagne h2 {
@@ -412,7 +412,7 @@ ul {
 
 /************HELP ****/
 #abt-us .sec-help-head {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/envio.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/envio.jpg);
   background-size: cover;
   background-attachment: fixed; }
   #abt-us .sec-help-head .sec-help-g-map {
@@ -671,7 +671,7 @@ span.price {
 
 /********************* SIGN IN *******************/
 .background-login {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../../img/space.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/space.jpg);
   background-size: cover;
   background-attachment: fixed; }
 
