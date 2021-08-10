@@ -1,4 +1,4 @@
-# coder_house
+# LemmonDrinks by Nahuel Diaz
 Proyect of CoderHouse Course Web Development
 
 1° Proyecto de desarrollo Web que estoy haciendo a traves de la academia CoderHouse
