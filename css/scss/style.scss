@@ -44,11 +44,7 @@
     li:hover {
         .sub-ul {
             display: block;
-            background: #a64bf4;
-            background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
-            background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
-            background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-            background: linear-gradient(45deg, #00dbde, #fc00ff);
+            @include backGradient;
             -webkit-transition: background-color 0.4s;
             -o-transition: background-color 0.4s;
             -moz-transition: background-color 0.4s;
@@ -78,11 +74,7 @@
             }
 
             &:hover {
-                background: #a64bf4;
-                background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
-                background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
-                background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-                background: linear-gradient(45deg, #00dbde, #fc00ff);
+                @include backGradient;
                 -webkit-transition: background-color 0.4s;
                 -o-transition: background-color 0.4s;
                 -moz-transition: background-color 0.4s;
@@ -139,9 +131,7 @@
 
 /**********HOME***************************************/
 .home {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/champ22.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    @include backImg ($back1, $back2, url(../img/champ22.jpg));
     padding: 20rem 0rem;
 
     h1 {
@@ -161,15 +151,11 @@
         @include txtcenter;
         width: 40%;
 
-        background-color: darkorange;
-        color: white;
+        @include backcolor ($oranDk);
+        color: $white;
 
         &:hover {
-            background: #a64bf4;
-            background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
-            background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
-            background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-            background: linear-gradient(45deg, #00dbde, #fc00ff);
+            @include backGradient;
             -webkit-transition: background-color 0.4s;
             -o-transition: background-color 0.4s;
             -moz-transition: background-color 0.4s;
@@ -196,7 +182,7 @@
 /**************DISCOUNTS**************/
 .discounts {
     @include font (null, center, bolder);
-    color: white;
+    color: $white;
     @include backcolor ($black);
     @include paddi (4%, 0%);
 }
@@ -216,8 +202,8 @@ h2 {
 
 /******DRINKS****/
 .drinks {
-    background-color: black;
-    color: white;
+    @include backcolor ($black);
+    color: $white;
 }
 
 /**************PAYMENT METHODS**************/
@@ -248,17 +234,13 @@ h2 {
     }
 
     .abt-us-head{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/warehouse.jpg);
-        background-size: cover;
-        background-attachment: fixed;
+        @include backImg ($back1, $back2, url(../img/warehouse.jpg));
         padding: 8rem 0rem;
     }
 
     #abt-map {
         @include paddi (1%, 0%);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/world1.jpg);
-        background-size: cover;
-        background-attachment: fixed;
+        @include backImg ($back1, $back2, url(../img/world1.jpg));
     
         .g_map {
             @include border (double, 40px);
@@ -269,9 +251,7 @@ h2 {
     }
     
     .abt-new{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/interview.jpg);
-        background-size: cover;
-        background-attachment: fixed;
+        @include backImg ($back1, $back2, url(../img/interview.jpg));
         padding: 14rem 1rem;
 
         a{
@@ -314,11 +294,11 @@ h2 {
     @include width (20%);
 
     &:hover {
-        color: white;
-        background-color: transparent;
+        color: $white;
+        @include backcolor (transparent);
         font-weight: 200;
         transition: background-color 0.1s;
-        border-color: white;
+        border-color: $white;
     }
 }
 
@@ -328,12 +308,12 @@ ul {
 }
 
 .card-products {
-    @include border(solid, 12px, #0caebf);
+    @include border(solid, 12px, $Cian);
     width: 18rem;
     margin: 3rem 2rem;
-    color: white;
+    color: $white;
     display: inline-block;
-    background-color: #04393999;
+    @include backcolor (#04393999);
 }
 
 .addToCart {
@@ -341,11 +321,11 @@ ul {
     @include width (65%);
 
     &:hover {
-        color: white;
-        background-color: transparent;
+        color: $white;
+        @include backcolor (transparent);
         font-weight: 200;
         transition: background-color 0.1s;
-        border-color: white;
+        border-color: $white;
     }
 }
 
@@ -353,12 +333,10 @@ ul {
 
 .wines {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/winee1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    @include backImg ($back1, $back2, url(../img/winee1.jpg));
 
     h2 {
-        background-color: deeppink;
+        @include backcolor ($dpink);
 
         .h2-img {
             width: 5rem;
@@ -368,13 +346,11 @@ ul {
 
 .vodka {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/ciro.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    @include backImg ($back1, $back2, url(../img/ciro.jpg));
 
     h2 {
-        background-color: #fffffff2;
-        color: black;
+        @include backcolor ($vodkaWhite);
+        color: $black;
 
         .h2-img {
             width: 5rem;
@@ -384,12 +360,10 @@ ul {
 
 .beer {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/ber33.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    @include backImg ($back1, $back2, url(../img/ber33.jpg));
 
     h2 {
-        background-color: #F0B01AED;
+        @include backcolor ($beerGold);
 
         .h2-img {
             width: 5rem;
@@ -399,12 +373,10 @@ ul {
 
 .champagne {
     @include txtcenter;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/champ22.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    @include backImg ($back1, $back2, url(../img/champ22.jpg));
 
     h2 {
-        background-color: #F2C288;
+        @include backcolor ($champBack);
 
         .h2-img {
             width: 5rem;
@@ -423,7 +395,7 @@ ul {
 .vodka-cotainer,h2 {
     @include txtcenter;
     padding: 2rem 0rem;
-    color: white;
+    color: $white;
 }
 
 /*PUBLICITY SECTION*/
@@ -431,7 +403,7 @@ ul {
     @include txtcenter;
     @include font (larger, null, null, underline);
     @include width (100%);
-    background-color: #140091;
+    @include backcolor ($prdBack);
 }
 
 .prd-commercial {
@@ -442,32 +414,23 @@ ul {
 .col-75-contact {
 
     .col-75-container-contact {
-        background-color: #f2f2f2;
+        @include backcolor ($Container);
         padding: 2rem 0rem 0rem 3rem;
-        border-style: solid;
-        border-radius: 10px;
-        border-color: lightgray;
-        border-width: 5px;
+        @include border (solid, 10px, lightgray, 5px);
         width: 80%;
         margin: 1rem 12rem;
 
         input[type="text"],[type="email"] {
             margin-bottom: 30px;
             padding: 1.2rem 1rem;
-            border-style: solid;
-            border-radius: 8px;
-            border-color: #ccc;
-            border-width: 2px;
+            @include border (solid, 8px, $c3, 2px);
             -webkit-appearance: none;
             width: 90%;
         }
 
         .btn-form-contact {
-            background-color: white;
-            border-style: solid;
-            border-radius: 3px;
-            border-color: black;
-            border-width: 2px;
+            @include backcolor ($white);
+            @include border (solid, 3px, $black, 2px);
             padding: 0.5rem 1rem;
             margin: 2rem 13rem;
         }
@@ -508,9 +471,7 @@ ul {
 
 #abt-us{
     .sec-help-head{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/envio.jpg);
-        background-size: cover;
-        background-attachment: fixed;
+        @include backImg ($back1, $back2, url(../img/envio.jpg));
 
         .sec-help-g-map {
             @include border (solid, 40px);
@@ -522,10 +483,8 @@ ul {
 }
 
 .sec-help-head-pay{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.335)), url(../img/pay2.webp);
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
+    @include backImg ($back1Pay, $back2, url(../img/pay2.webp));
+    color: $white;
 
     .credit-card {
         h2 {
@@ -648,7 +607,7 @@ ul {
 }
 
 .section_cervezas_card {
-    background-color: rgba(165, 42, 42, 0.281);
+    @include backcolor ($cerCard);
 }
 
 .section_cervezas_card-img {
@@ -660,7 +619,7 @@ ul {
 }
 
 .layer {
-    background-color: rgba(0, 0, 0, 0.227);
+    @include backcolor ($layer);
     position: absolute;
     @include width (100%);
     z-index: 2;
@@ -671,7 +630,7 @@ ul {
 
 .boot-icon {
     @include font (35px);
-    color: white;
+    color: $white;
 }
 
 /****************************CHECKOUT*******************/
@@ -705,7 +664,7 @@ ul {
     margin: 3rem 8rem;
 
     .container {
-        @include border (solid, 10px, burlywood, 5px);
+        @include border (solid, 10px, $burly, 5px);
         padding: 2rem 2rem;
     }
 }
@@ -717,7 +676,7 @@ ul {
     @include paddi(0%, 4%);
 
     .col-75-container {
-        background-color: #f2f2f2;
+        @include backcolor ($Container);
         padding: 2rem 10rem 3rem 2rem;
         @include border (solid, 15px, lightgray, 5px);
         width: 95%;
@@ -733,7 +692,7 @@ input[type=text],
 [type=email] {
     margin-bottom: 30px;
     padding: 1.2rem 1rem;
-    @include border (solid, 8px, #ccc, 2px);
+    @include border (solid, 8px, $c3, 2px);
     -webkit-appearance: none;
     width: 101%;
 }
@@ -767,8 +726,8 @@ label {
 }
 
 .btn-fin-pay {
-    background-color: #08DB33;
-    color: white;
+    @include backcolor ($Green);
+    color: $white;
     padding: 15px 30%;
     border: none;
     border-radius: 10px;
@@ -784,13 +743,13 @@ label {
 
 span.price {
     float: right;
-    color: grey;
+    color: $grey;
 }
 
 .select-yearr {
     @include width (100%);
     @include paddi (8%, 0%);
-    background: white;
+    background: $white;
     @include border (solid, none, 3px);
 }
 
@@ -817,14 +776,14 @@ span.price {
 .select-provincia {
     width: 100%;
     padding: 1.2rem 0rem;
-    background: white;
+    background: $white;
     @include border (solid, 8px);
 }
 
 .select-ciudad {
     width: 100%;
     padding: 1.2rem 0rem;
-    background: white;
+    background: $white;
     @include border (solid, 8px);
 }
 
@@ -838,9 +797,7 @@ span.price {
 /********************* SIGN IN *******************/
 
 .background-login {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.335)), url(../img/space.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    @include backImg ($back1, $back2, url(../img/space.jpg));
 }
 
 .form-signin {
@@ -871,7 +828,7 @@ span.price {
 }
 
 .ft-white {
-    color: white
+    color: $white;
 }
 
 /*------------------------------------------------------------------
@@ -879,7 +836,7 @@ span.price {
 
 .sign-in-with {
     margin: 1rem;
-    color: white;
+    color: $white;
 }
 
 .btn-face,
@@ -897,11 +854,7 @@ span.price {
     width: calc((100% - 20px) / 2);
     height: 70px;
     border-radius: 10px;
-    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-    -o-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    @include boxShadow;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -921,11 +874,7 @@ span.price {
     border-radius: 10px;
     top: 0;
     left: 0;
-    background: #a64bf4;
-    background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    @include backGradient;
     opacity: 0;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -934,8 +883,8 @@ span.price {
 }
 
 .btn-face {
-    color: #fff;
-    background-color: #3b5998;
+    color: $f3;
+    @include backcolor ($fbBtn);
     margin: 1.5rem 0rem;
 
     img {
@@ -946,7 +895,7 @@ span.price {
 
 .btn-google {
     color: #555555;
-    background-color: #fff;
+    @include backcolor ($f3);
     margin: -5.86rem 0rem 0rem 19rem;
 }
 
@@ -963,7 +912,7 @@ span.price {
 
 .btn-face:hover,
 .btn-google:hover {
-    color: #fff;
+    color: $f3;
 }
 
 
@@ -997,7 +946,7 @@ span.price {
             margin-bottom: 0.5rem;
 
             &:hover {
-                background-color: $Cian;
+                @include backcolor ($Cian);
                 border-radius: 12%;
                 width: 3rem;
             }
@@ -1010,14 +959,14 @@ span.price {
             content: "·";
             @include font (20px);
             left: 0;
-            color: #fff;
+            color: $f3;
             padding-right: 5px;
         }
     }
 
     p.footer-links {
         @include font (14px, null, bold);
-        color: #FFFFFF;
+        color: $f6;
         margin: 10px 0 10px 0;
         @include paddi (0px, 0px);
         transition: ease .25s;
@@ -1158,13 +1107,13 @@ span.price {
 -----------------------------------*/
 
 .breadcrumb>.active a {
-    color: #468595;
+    color: $breadA;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .breadcrumb li a {
-    color: #b3d4dc;
+    color: $breadLi;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0.6rem;
@@ -1176,14 +1125,14 @@ span.price {
 
 .breadcrumb {
     margin-bottom: 100px;
-    background-color: #ffffff;
+    @include backcolor ($f6);
     padding: 2rem 0rem;
     justify-content: center;
     margin: 0rem 0rem;
 }
 
 .breadcrumbBox {
-    background-color: #ffffff;
+    @include backcolor ($f6);
     height: 100px;
     margin-bottom: 100px;
     padding-top: 32px;
@@ -1309,12 +1258,9 @@ span.price {
         .col-75-contact{
 
             .col-75-container-contact {
-                background-color: #f2f2f2;
+                @include backcolor ($Container);
                 padding: 2rem 0rem 0rem 3rem;
-                border-style: solid;
-                border-radius: 10px;
-                border-color: lightgray;
-                border-width: 5px;
+                @include border (solid, 10px, lightgray, 5px);
                 width: 98%;
                 margin: 1rem 0rem;
             }
@@ -1349,11 +1295,11 @@ span.price {
     }
 
     .btn-face, .btn-google {
-        width: 0px;
+        width: unset;
     }
 
     .btn-google {
-        margin: 0rem, 0rem, 0rem, 0rem;
+        margin: unset;
     }
 
     /*********************PAY*******************/
@@ -1664,9 +1610,7 @@ span.price {
 
         .top-ul {
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            @include disp-pos(flex, null, column, space-evenly, null, null);
             align-items: center;
             padding-left: 0%;
             margin: 2rem 0rem;

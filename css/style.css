@@ -812,7 +812,7 @@ span.price {
   .footer p.footer-links {
     font-size: 14px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 10px 0 10px 0;
     padding: 0px 0px;
     transition: ease .25s; }
@@ -1036,9 +1036,9 @@ span.price {
     margin: 0.5rem 0rem;
     font-size: 1.2rem; }
   .btn-face, .btn-google {
-    width: 0px; }
+    width: unset; }
   .btn-google {
-    margin: 0rem, 0rem, 0rem, 0rem; }
+    margin: unset; }
   /*********************PAY*******************/
   .page_pay {
     text-align: center;
