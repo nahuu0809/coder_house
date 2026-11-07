@@ -38,3 +38,17 @@ npm run watch-css     # recompila al guardar
 - Proyecto de aprendizaje de 2021. Los datos de contacto y de pago son de ejemplo.
 - Las marcas y las imágenes se usan solo con fines educativos.
 - `node-sass` está discontinuado. Si falla la instalación, usá `sass` (Dart Sass) con el mismo comando.
+
+## Créditos y licencias de terceros
+
+El código propio (HTML, CSS y JavaScript del sitio) está bajo licencia MIT. Las bibliotecas y recursos de terceros mantienen sus propias licencias:
+
+- [Bootstrap 5.0.2](https://getbootstrap.com) (MIT) e [íconos de Bootstrap](https://icons.getbootstrap.com) (MIT)
+- [Font Awesome Free](https://fontawesome.com) (íconos CC BY 4.0, fuentes SIL OFL 1.1, código MIT)
+- [normalize.css](https://github.com/necolas/normalize.css) (MIT)
+- Las fuentes de [Google Fonts](https://fonts.google.com) tienen licencias abiertas (OFL o Apache).
+- Las marcas de bebidas, logos e imágenes de terceros pertenecen a sus dueños y se usan solo con fines educativos. Si sos titular de alguno y querés que se retire, abrí un issue.
+
+## Licencia
+
+Código propio bajo [licencia MIT](LICENSE). © 2026 Nahuel Emiliano Diaz.
